@@ -1,0 +1,10 @@
+:root {
+    /* Couleurs principales */
+    --green-color: #B3D537;
+    --darkGreen-color: #0D1715;
+    --prog-color: #1C231E;
+
+    /* Polices principales */
+    --paragraphe-font: "Titillium Web", sans-serif;
+    --h2-font: "Black Ops One", system-ui;
+}
