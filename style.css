@@ -8,3 +8,78 @@
     --paragraphe-font: "Titillium Web", sans-serif;
     --h2-font: "Black Ops One", system-ui;
 }
+
+
+
+body {
+    background-color: var(--darkGreen-color);
+    font-family: var(--paragraphe-font);
+}
+
+
+.abonnement h2 {
+    font-family: var(--h2-font);
+    color: var(--green-color);
+    padding: 12vh;
+    font-size: 3rem;
+    
+}
+.abonnement h3{
+    font-family: var(--h2-font);
+    margin-top: 15px;
+    font-size: 30px;
+} 
+
+
+
+.abonnement{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#container{
+    display :flex;
+    justify-content: space-evenly;
+
+    
+}
+
+.program{
+    background-color: var(--prog-color);
+    width: 30vw;
+    height: 80vh ;
+    border-radius: 8%;
+}
+
+.program-vert{
+    background-color: var(--green-color);
+    width: 30vw;
+    height: 80vh ;
+    border-radius: 8%;
+}
+
+.program-header img{
+        margin-top: 10px;
+        width: 50%;
+        margin-bottom: auto;
+}
+.invalid {
+    color: #6F6565;
+}
+
+.valid{
+    color: white;
+}
+.program-vert .valid{
+    color: black;
+}
+
+.prix {
+    font-size: 2rem;
+}
+
+li{
+    padding: 10px;
+}
