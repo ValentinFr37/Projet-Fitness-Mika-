@@ -1,0 +1,64 @@
+main {
+  height: 100vh;
+}
+
+.home-container {
+  grid-template-columns: 1fr;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.home-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.home-img {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: auto;
+  transform: none;
+  padding: 0 20px;
+  transform: translateY(-10%);
+}
+
+.home-title {
+  order: 3;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.home-subtitle {
+  order: 2;
+  font-size: 2rem;
+}
+
+.home-description {
+  order: 4;
+  font-size: 1rem;
+  margin-bottom: 0rem;
+}
+
+.button-consultation {
+  order: 4;
+  margin-top: 0.9rem;
+  font-size: 1rem;
+  padding: 12px 15px;
+}
+
+.home-triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  width: 80%;
+  height: 500px;
+  z-index: 1;
+}

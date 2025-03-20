@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Londrina+Outline&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/f629b691f4.js"
       crossorigin="anonymous"
@@ -10,14 +18,51 @@
     <title>Mika Fitness</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      only
+      media="screen and (max-width: 768px)"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="tablet.css"
+      only
+      media="screen and (min-width: 768px) and (max-width:1024px)"
+    /> -->
   </head>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Londrina+Outline&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-</head>
 
-  <body></body>
+  <body>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home-container container">
+          <div class="home-data">
+            <h1 class="home-title">Viens comme tu es...</h1>
+            <h2 class="home-subtitle">Repars plus fort</h2>
+            <p class="home-description">
+              Objectif ? Vous aider à repousser vos limites, nne humeur. Avec
+              moi, chaque Objectif ? Vs limites, nne humeur. Avec moi, chaqu
+            </p>
+            <a href="" class="button-consultation">
+              <span>Consultation</span> <span>OFFERTE</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="home-images">
+
+            <div class="home-triangle"></div>
+            <img
+            src="./assets/home-img.png"
+            alt="home image"
+            class="home-img"
+          />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./gsap.js"></script>
+  </body>
 </html>
