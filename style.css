@@ -9,46 +9,83 @@
     --h2-font: "Black Ops One", system-ui;
 }
 
-header {
 
+header {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    padding: 1px;
-    paragraphe-font: var(--paragraphe-font);
-    background-color: #1C231E;
-
+    padding: 20px 5%;
+    background-color: var(--darkGreen-color);
+    height: 80px;
 
 }
 
-.div-logo {
+
+.logo {
     display: flex;
-    font-size: 100px;
+    align-items: center;
+    font-size: 75px;
     font-weight: bold;
-    color: #B3D537;
+    color: #fff;
+}
+
+.logo img {
+    width: 200px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+ul li {
+    display: inline-flex;
+    justify-content: space-between;
 
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+li {
+    display: inline-block;
+
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
 }
 
+nav a:hover {
+    color: #a3ff4b;
+    /* Vert clair */
+}
+
+/* Bouton Consultation Offerte */
 .bouton {
-    background-color: #a3f233;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+    background-color: var(--green-color);
     color: black;
     font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
 
+.bouton:hover {
+    background-color: #8cd93a;
+
+}
+
+.bouton a {
+    --paragraphe-font: "Titillium Web", sans-serif;
+    text-decoration: none;
+    color: black;
 }
