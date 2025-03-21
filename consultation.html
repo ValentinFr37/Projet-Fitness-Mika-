@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Londrina+Outline&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          src="https://kit.fontawesome.com/f629b691f4.js"
+          crossorigin="anonymous"
+        ></script>
+        <title>Mika Fitness</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+          rel="stylesheet"
+          href="mobile.css"
+          only
+          media="screen and (max-width: 768px)"
+        />
+      </head>
+  <body>
+      <header>
+        <div class="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav-close">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+
+          <div class="logo">
+              <a href="index.html"><img src="./assets/Logo Projet1.png" alt="logo"></a>
+          </div>
+      
+      
+          <div class="navbar">
+    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programme.html">Découvrez le coach</a></li>
+                    <li><a href="programme.html">Abonnements</a></li>
+                    <li><a href="tarifs.html">Programmes</a></li>
+                    <li><a href="contact.html">Avis</a></li>
+                </ul>
+            </nav>
+    
+            <a href="./consultation.html" class="main-btn-header">
+              <span>Consultation</span> <span>OFFERTE</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+      
+      </header>
+
+
+      
+    <main>
+      <!--==================== CALCULATE ====================-->
+      <section class="calculate">
+        <div class="calculate-container container">
+          <div class="calculate-content">
+            <div class="section-titles">
+              <h1 class="section-title-border">CALCULER <span>VOTRE IMC</span></h1>
+            </div>
+
+            <p class="calculate-description">
+                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page. avant impression. Le Lorem Ipsum est le faux texte standard de  l'imprimerie depuis les années 1500, quand un imprim
+            </p>
+
+            <form action="" class="calculate-form" id="calculate-form">
+              <div class="imc-form">
+                  <div class="calculate-box">
+                    <input
+                   
+                      placeholder="Taille"
+                      class="calculate-input cm"
+                      id="calculate-cm"
+                    />
+                    <div class="cm"></div>
+                    
+                  </div>
+                  <div class="calculate-box">
+                    <input
+                     
+                      placeholder="Poid"
+                      class="calculate-input kg"
+                      id="calculate-kg"
+                    />
+                   
+                  </div>
+              </div>
+
+              <button type="submit" class="button main-btn">
+                Calculate Now <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+
+            <p class="calculate-message" id="calculate-message"></p>
+          </div>
+          <img
+            src="./assets/calculate-img.png"
+            alt="calculate image"
+            class="calculate-img"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
