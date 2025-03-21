@@ -1,0 +1,220 @@
+:root {
+    /* Couleurs principales */
+    --green-color: #B3D537;
+    --darkGreen-color: #0D1715;
+    --prog-color: #1C231E;
+
+    /* Polices principales */
+    --paragraphe-font: "Titillium Web", sans-serif;
+    --h2-font: "Black Ops One", system-ui;
+}
+/* Valentin debut */
+body{
+    background-color: var(--darkGreen-color);
+}
+
+main{
+    background-color: var(--darkGreen-color);
+    font-family: var(--paragraphe-font);
+    max-width: 1200px;  
+    margin: auto;
+}
+
+
+.abonnement h2 {
+    font-family: var(--h2-font);
+    color: var(--green-color);
+    padding: 12vh;
+    font-size: 3rem;
+    
+}
+.abonnement h3{
+    font-family: var(--h2-font);
+    margin-top: 15px;
+    font-size: 30px;
+    color: white;
+} 
+
+#silver{
+    color: var(--prog-color)
+}
+
+.abonnement{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#container{
+    display :flex;
+    justify-content: space-between;
+
+    
+}
+
+.program{
+    background-color: var(--prog-color);
+    width: 28vw;
+    height: 600px;
+    border-radius: 8%;
+}
+
+.program-vert{
+    background-color: var(--green-color);
+    width: 28vw;
+    height: 600px ;
+    border-radius: 8%;
+}
+
+.program-header img{
+        margin-top: 10px;
+        width: 30%;
+        margin-bottom: auto;
+        filter: brightness(0.35)
+        
+}
+.invalid {
+    color: #6F6565;
+}
+
+.valid{
+    color: white;
+}
+.program-vert .valid{
+    color: black;
+}
+
+.prix {
+    font-size: 2rem;
+}
+
+.abonnement li{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: var(--green-color); 
+    color: #0D1715; 
+    border: none; 
+    padding: 10px 20px;  
+    font-size: 24px;  
+    font-weight: bold;
+    border-radius: 5px; 
+    margin-top: 25px;
+    transition: transform 0.3s ease;
+
+}
+.btn:hover{
+    transform: scale(1.15);
+}
+
+#btnV {
+    background-color: var(--prog-color); 
+    color: var(--green-color); 
+    border: none; 
+    padding: 10px 20px;  
+    font-size: 24px;  
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 25px;
+    transition: transform 0.3s ease;
+}
+#btnV:hover{
+    transform: scale(1.15);
+}
+
+
+.checklist {
+    margin-top: 70px;
+}
+
+.fa-circle-check{
+    color: var(--green-color);
+}
+.prix{
+    margin:40px;
+    font-size: 2.5rem;
+    font-family: "Academy Engraved LET";
+}
+/* Valentin fin */
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--prog-color);
+    height: 80px;
+
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 75px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo img {
+    width: 200px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+nav ul, li{
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+li {
+    display: inline-block;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #a3ff4b;
+    /* Vert clair */
+}
+
+/* Bouton Consultation Offerte */
+.bouton {
+    background-color: var(--green-color);
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bouton:hover {
+    background-color: #8cd93a;
+
+}
+
+.bouton a {
+    --paragraphe-font: "Titillium Web", sans-serif;
+    text-decoration: none;
+    color: black;
+}
