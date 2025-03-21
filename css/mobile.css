@@ -24,7 +24,9 @@ main {
 }
 
 /* SECTION HOME IMANE */
-
+section.home {
+  margin-bottom: 70px;
+}
 .home-container {
   grid-template-columns: 1fr;
   padding-top: 2rem;

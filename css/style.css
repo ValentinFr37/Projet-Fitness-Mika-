@@ -130,7 +130,8 @@ nav a:hover {
 /*=============== HOME IMANE ===============*/
 section.home {
   margin-top: 70px;
-  height: 80vh;
+
+
 }
 
 .home-container {
@@ -407,7 +408,7 @@ section.home {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url("./assets/Google.png");
+  background-image: url("./../assets/Google.png");
   background-size: contain;
   margin-left: 20px;
 }
