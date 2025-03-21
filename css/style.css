@@ -1,7 +1,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Couleurs principales ==========*/
-  
+
   --green-color: #b3d537;
   --darkGreen-color: #0d1715;
   --prog-color: #1c231e;
@@ -44,12 +44,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  background: linear-gradient(
-    180deg,
-    #1c231e 0%,
-    #0d1715 70%,
-    rgba(179, 213, 55, 0.1) 100%
-  );
+  background: linear-gradient(180deg,
+      #1c231e 0%,
+      #0d1715 70%,
+      rgba(179, 213, 55, 0.1) 100%);
   height: 80px;
 }
 
@@ -238,6 +236,7 @@ section.home {
   padding: 12vh;
   font-size: 3rem;
 }
+
 .abonnement h3 {
   font-family: var(--h2-font);
   margin-top: 15px;
@@ -281,6 +280,7 @@ section.home {
   margin-bottom: auto;
   filter: brightness(0.35);
 }
+
 .invalid {
   color: #6f6565;
 }
@@ -288,6 +288,7 @@ section.home {
 .valid {
   color: white;
 }
+
 .program-vert .valid {
   color: black;
 }
@@ -312,6 +313,7 @@ section.home {
   margin-top: 25px;
   transition: transform 0.3s ease;
 }
+
 .btn:hover {
   transform: scale(1.15);
 }
@@ -327,6 +329,7 @@ section.home {
   margin-top: 25px;
   transition: transform 0.3s ease;
 }
+
 #btnV:hover {
   transform: scale(1.15);
 }
@@ -338,11 +341,13 @@ section.home {
 .fa-circle-check {
   color: var(--green-color);
 }
+
 .prix {
   margin: 40px;
   font-size: 2.5rem;
   font-family: "Academy Engraved LET";
 }
+
 /* Valentin fin */
 
 
@@ -377,7 +382,7 @@ section.home {
 }
 
 .testimonial {
-  flex: 0 0 calc(33% - 20px); 
+  flex: 0 0 calc(33% - 20px);
   background: var(--prog-color);
   padding: 20px 0;
   border-radius: 10px;
@@ -503,6 +508,7 @@ section.home {
   line-height: 1.7;
   margin-bottom: 50px;
 }
+
 .imc-form {
   display: flex;
   gap: 20px;
@@ -538,7 +544,67 @@ form .main-btn {
   width: 300px;
   justify-self: center;
 }
+
 /*=============== FIN CALCULE IMC IMANE ===============*/
 
 
+/*=============== FOOTER ===============*/
 
+.footer {
+  background-color: #0D1715;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-logo {
+  width: 200px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: var(--h2-font);
+  margin: 15px 0;
+
+}
+
+.footer-subtitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.footer-line {
+  height: 2px;
+  width: 350px;
+  background-color: #B3D537;
+  display: inline-block;
+  margin: 10px 15px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #B3D537;
+}
+
+.footer-copy {
+  font-size: 12px;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+/*=============== FIN FOOTER ===============*/
