@@ -56,14 +56,14 @@ main{
 .program{
     background-color: var(--prog-color);
     width: 28vw;
-    height: 88vh;
+    height: 600px;
     border-radius: 8%;
 }
 
 .program-vert{
     background-color: var(--green-color);
     width: 28vw;
-    height: 88vh ;
+    height: 600px ;
     border-radius: 8%;
 }
 
