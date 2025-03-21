@@ -1,0 +1,158 @@
+/* HEADER BURGER IMANE */
+
+header {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.navbar {
+  display: none;
+}
+
+.fa-bars {
+  display: block;
+  font-size: 3rem;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+/* FIN HEADER BURGER */
+
+main {
+  height: 100vh;
+}
+
+/* SECTION HOME IMANE */
+
+.home-container {
+  grid-template-columns: 1fr;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.home-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.home-img {
+  display: block;
+  width: 70%;
+  margin: auto;
+  transform: none;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.home-title {
+  order: 1;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.home-subtitle {
+  order: 2;
+  font-size: 2rem;
+}
+
+.home-description {
+  order: 4;
+  font-size: 1rem;
+  margin-bottom: 0rem;
+}
+
+.button-consultation {
+  order: 4;
+  margin-top: 0.9rem;
+  font-size: 1rem;
+  padding: 12px 15px;
+}
+
+.home-triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  width: 80%;
+  height: 500px;
+  z-index: -1;
+}
+
+/* LES AVIS IMANE */
+
+.title-avis {
+  font-size: 2rem;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.testimonial {
+  flex: 0 0 70%; 
+}
+
+.testimonial-header {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.testimonial-name {
+  margin-bottom: 5px;
+}
+
+.testimonial-date {
+  margin-bottom: 10px;
+}
+
+
+/* calculer IMC IMANE*/
+
+.calculate-container {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 20px;
+}
+
+.calculate-content {
+  width: 100%;
+  margin: auto;
+}
+
+.calculate-content .section-titles {
+  margin-bottom: 0.5rem;
+}
+
+.section-title-border,
+.section-title-border span {
+  font-size: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.calculate-description {
+  width: 85%;
+  margin: auto;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.imc-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.calculate-form {
+  width: 85%;
+  margin: auto;
+}
+

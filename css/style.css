@@ -1,0 +1,543 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Couleurs principales ==========*/
+  
+  --green-color: #b3d537;
+  --darkGreen-color: #0d1715;
+  --prog-color: #1c231e;
+
+  /*========== Polices principales ==========*/
+
+  --paragraphe-font: "Titillium Web", sans-serif;
+  --h2-font: "Black Ops One", sans-serif;
+}
+
+/*=============== BASE ===============*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--darkGreen-color);
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============== HEADER THOMAS ===============*/
+
+.fa-bars,
+.fa-xmark {
+  display: none;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background: linear-gradient(
+    180deg,
+    #1c231e 0%,
+    #0d1715 70%,
+    rgba(179, 213, 55, 0.1) 100%
+  );
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 75px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo img {
+  width: 200px;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+
+.navbar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+nav ul,
+li {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #a3ff4b;
+}
+
+.main-btn-header {
+  padding: 13px 8px;
+  background-color: #b3d537;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border: 2px solid #b3d537;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.main-btn-header span:last-child {
+  text-transform: uppercase;
+}
+
+.main-btn-header:hover {
+  color: white;
+  background-color: #1d2c1f;
+  box-shadow: 0 0 10px #afafaf;
+}
+
+.main-btn-header i {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.main-btn-header:hover i {
+  transform: translateX(8px);
+}
+
+/*=============== HOME IMANE ===============*/
+section.home {
+  margin-top: 70px;
+  height: 80vh;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 50px;
+}
+
+.home-title {
+  font-family: "Londrina Outline", sans-serif;
+  font-size: 3rem;
+}
+
+.home-subtitle {
+  font-family: var(--h2-font);
+  padding: 40px 0;
+  font-size: 4rem;
+}
+
+.home-subtitle,
+.home-title {
+  letter-spacing: 1.5px;
+  color: white;
+  font-weight: bold;
+}
+
+.home-description {
+  font-family: var(--paragraphe-font);
+  color: #afafaf;
+  max-width: 500px;
+  line-height: 2.5;
+  margin-bottom: 50px;
+}
+
+.home-images {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.home-img {
+  z-index: 2;
+  width: 500px;
+  transform: translateY(-123%);
+}
+
+.home-triangle {
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  width: 500px;
+  height: 600px;
+  background-color: var(--green-color);
+  z-index: 1;
+}
+
+/*=============== BUTTON CONSULTATION IMANE ===============*/
+
+.main-btn {
+  padding: 18px 36px;
+  background-color: #b3d537;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border: 2px solid #b3d537;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.main-btn span:last-child {
+  text-transform: uppercase;
+}
+
+.main-btn:hover {
+  color: white;
+  background-color: #1d2c1f;
+  box-shadow: 0 0 10px #afafaf;
+}
+
+.main-btn i {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.main-btn:hover i {
+  transform: translateX(8px);
+}
+
+
+/* ABONNEMENT VALENTIN */
+
+.main-section-title {
+  font-family: var(--h2-font);
+  color: var(--green-color);
+  padding: 12vh;
+  font-size: 3rem;
+}
+.abonnement h3 {
+  font-family: var(--h2-font);
+  margin-top: 15px;
+  font-size: 30px;
+  color: white;
+}
+
+#silver {
+  color: var(--prog-color);
+}
+
+.abonnement {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.program {
+  background-color: var(--prog-color);
+  width: 28vw;
+  height: 88vh;
+  border-radius: 8%;
+}
+
+.program-vert {
+  background-color: var(--green-color);
+  width: 28vw;
+  height: 88vh;
+  border-radius: 8%;
+}
+
+.program-header img {
+  margin-top: 10px;
+  width: 30%;
+  margin-bottom: auto;
+  filter: brightness(0.35);
+}
+.invalid {
+  color: #6f6565;
+}
+
+.valid {
+  color: white;
+}
+.program-vert .valid {
+  color: black;
+}
+
+.prix {
+  font-size: 2rem;
+}
+
+.abonnement li {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: var(--green-color);
+  color: #0d1715;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 25px;
+  transition: transform 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.15);
+}
+
+#btnV {
+  background-color: var(--prog-color);
+  color: var(--green-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 25px;
+  transition: transform 0.3s ease;
+}
+#btnV:hover {
+  transform: scale(1.15);
+}
+
+.checklist {
+  margin-top: 70px;
+}
+
+.fa-circle-check {
+  color: var(--green-color);
+}
+.prix {
+  margin: 40px;
+  font-size: 2.5rem;
+  font-family: "Academy Engraved LET";
+}
+/* Valentin fin */
+
+
+/* SECTION AVIS IMANE  */
+.testimonials {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: var(--darkGreen-color);
+  margin-top: 100px;
+}
+
+/* Carrousel */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Conteneur des avis */
+.carousel-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+  flex: 0 0 calc(33% - 20px); 
+  background: var(--prog-color);
+  padding: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* En-tête de l'avis */
+.testimonial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-name {
+  font-family: var(--paragraphe-font);
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.testimonial-name::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("./assets/Google.png");
+  background-size: contain;
+  margin-left: 20px;
+}
+
+/* Date */
+.testimonial-date {
+  font-size: 0.8rem;
+  color: gray;
+  font-family: var(--paragraphe-font);
+}
+
+/* Étoiles */
+.testimonial-star i {
+  color: transparent;
+  background: linear-gradient(60deg, #f39c12, #f1c40f, #ffffff, #ffffff);
+  background-clip: text;
+  font-size: 1.2rem;
+}
+
+/* Texte de l'avis */
+.testimonial-text {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #fafafa;
+  line-height: 1.5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+/* Boutons de navigation */
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  color: #fafafa;
+  transition: 0.3s;
+}
+
+.carousel-btn:hover {
+  color: var(--green-color, #28a745);
+}
+
+.evalutaion-google p {
+  color: var(--green-color);
+  font-size: 1.8rem;
+  margin-top: 30px;
+  font-family: var(--paragraphe-font);
+}
+
+/*=============== CALCULE IMC IMANE ===============*/
+
+.calculate-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.calculate-content {
+  width: 70%;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.calculate-content .section-titles {
+  margin-bottom: 2rem;
+}
+
+.section-title-border {
+  font-family: "Londrina Outline", sans-serif;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 0.6rem;
+  margin-bottom: 40px;
+}
+
+.section-title-border span {
+  font-family: var(--h2-font);
+  padding: 40px 0;
+  font-size: 3.5rem;
+}
+
+.calculate-description {
+  font-family: var(--paragraphe-font);
+  color: #afafaf;
+  max-width: 500px;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+.imc-form {
+  display: flex;
+  gap: 20px;
+}
+
+.calculate-form {
+  width: 500px;
+}
+
+.calculate-box {
+  border: 1px solid var(--green-color);
+  width: 100%;
+  border-radius: 20px;
+}
+
+.calculate-input {
+  width: 100%;
+  background: transparent;
+  padding: 20px 60px 20px 30px;
+  outline: none;
+  border: none;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+}
+
+form .main-btn {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.calculate-img {
+  width: 300px;
+  justify-self: center;
+}
+/*=============== FIN CALCULE IMC IMANE ===============*/
+
+
+
