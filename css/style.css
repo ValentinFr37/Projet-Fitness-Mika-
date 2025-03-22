@@ -42,7 +42,7 @@ header {
   position: fixed;
   width: 100%;
   inset: 0;
-  z-index: 30;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -141,11 +141,12 @@ nav a:hover {
 
 /*=============== HOME IMANE ===============*/
 section.home {
-  margin-top: 100px;
+  margin-bottom: 80px;
   padding-top: 70px;
-  display: grid;
-  place-items: center;
+  /* display: grid; */
+  /* place-items: center; */
   height: 80vh;
+  /* border: 3px solid red; */
 }
 
 .home-container {
@@ -187,10 +188,11 @@ section.home {
   width: 500px;
   line-height: 2.5;
   margin-bottom: 50px;
+  font-size: 1.1rem;
 }
 
 .home-images {
-  max-height: 500px;
+  max-height: 900px;
   overflow: hidden;
 }
 
@@ -203,10 +205,10 @@ section.home {
 .home-triangle {
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
   width: 450px;
-  height: 500px;
+  height: 770px;
   background-color: var(--green-color);
   z-index: 1;
-  transform: translateX(10%);
+  /* transform: translateX(10%); */
 }
 
 /*=============== BUTTON CONSULTATION IMANE ===============*/
@@ -250,7 +252,7 @@ section.home {
 /* titre section 2 */
 #bienvenueChezMicka {
   color: white;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: space-between;
 }
@@ -259,20 +261,18 @@ section.home {
 
 #illustration {
   display: block;
-  /* padding-top: 70px; */
 }
 
 .photo1 {
   z-index: -1;
-  width: 90%;
+  width: 80%;
   transform: translateY(3%);
-  /* height: 300px; */
 }
 
 .photo2 {
-  width: 81%;
+  width: 90%;
   z-index: 10;
-  transform: translateY(-115%);
+  transform: translate(15%, -100%);
 }
 
 /*deuxième article à droite: bio de Micka*/
@@ -280,19 +280,22 @@ section.home {
 #descriptionbio {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  max-height: 600px;
 }
 
-h2 {
+#descriptionbio h2 {
   font-family: var(--h2-font);
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-bottom: 80px;
 }
 
 h3 {
   font-family: var(--h2-font);
   font-size: 1.5rem;
+  margin-bottom: 80px;
 }
 
 p {
@@ -302,6 +305,7 @@ p {
   width: 60%;
   line-height: 2;
   letter-spacing: 1.5px;
+  margin-bottom: 80px;
 }
 
 .a-propos {
@@ -445,7 +449,6 @@ p {
   text-align: center;
   padding: 50px 20px;
   background-color: var(--darkGreen-color);
-  margin-top: 100px;
 }
 
 /* Carrousel */
@@ -544,6 +547,7 @@ p {
   padding: 10px;
   color: #fafafa;
   transition: 0.3s;
+  z-index: 1;
 }
 
 .carousel-btn:hover {
@@ -553,6 +557,7 @@ p {
 .evalutaion-google p {
   color: var(--green-color);
   font-size: 1.8rem;
+  margin: auto;
   margin-top: 30px;
   font-family: var(--paragraphe-font);
 }
@@ -635,3 +640,73 @@ form .main-btn {
 }
 
 /*=============== FIN CALCULE IMC IMANE ===============*/
+
+/*=============== CHOOSE ===============*/
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2rem;
+  font-family: var(--paragraphe-font);
+  color: #fafafa;
+  margin-bottom: 60px;
+}
+
+.choose-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.choose-group {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.choose-number {
+  font-size: 3rem;
+  font-family: var(--h2-font);
+  color: var(--green-color);
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.choose-subtitle {
+  font-size: var(--paragraphe-font);
+  color: #fafafa;
+  font-size: 1rem;
+  width: 100%;
+  align-items: center;
+}
+
+.partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.partner img {
+  width: 200px;
+}
+
+.partner .partner-img {
+  filter: brightness(0%) contrast(10%);
+}
