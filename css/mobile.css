@@ -25,7 +25,8 @@ main {
 
 /* SECTION HOME IMANE */
 section.home {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 .home-container {
   grid-template-columns: 1fr;
@@ -57,22 +58,26 @@ section.home {
   order: 1;
   font-size: 2rem;
   margin-bottom: 0;
+  padding: 10px 0;
 }
 
 .home-subtitle {
   order: 2;
   font-size: 2rem;
+  padding: 0;
 }
 
 .home-description {
+  max-width: 350px;
+  width: 90%;
   order: 4;
   font-size: 1rem;
   margin-bottom: 0rem;
+  padding: 0;
 }
 
 .button-consultation {
   order: 4;
-  margin-top: 0.9rem;
   font-size: 1rem;
   padding: 12px 15px;
 }
@@ -97,7 +102,7 @@ section.home {
   margin-bottom: 15px;
 }
 .testimonial {
-  flex: 0 0 70%; 
+  flex: 0 0 70%;
 }
 
 .testimonial-header {
@@ -112,7 +117,6 @@ section.home {
 .testimonial-date {
   margin-bottom: 10px;
 }
-
 
 /* calculer IMC IMANE*/
 
@@ -157,4 +161,3 @@ section.home {
   width: 85%;
   margin: auto;
 }
-

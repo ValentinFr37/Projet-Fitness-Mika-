@@ -38,17 +38,32 @@ a {
   display: none;
 }
 
-
 header {
+  position: fixed;
+  width: 100%;
+  inset: 0;
+  z-index: 30;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  background: linear-gradient(180deg,
-      #1c231e 0%,
-      #0d1715 70%,
-      rgba(179, 213, 55, 0.1) 100%);
-  height: 80px;
+  background: linear-gradient(
+    180deg,
+    #1c231e 0%,
+    #0d1715 70%,
+    rgba(179, 213, 55, 0.1) 100%
+  );
+  height: 10vh;
+}
+
+.header-navbar {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
 .logo {
@@ -61,16 +76,15 @@ header {
 
 .logo img {
   width: 200px;
-  margin-right: 10px;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .navbar {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
   margin: auto;
+  gap: 100px;
 }
 
 nav ul,
@@ -127,9 +141,11 @@ nav a:hover {
 
 /*=============== HOME IMANE ===============*/
 section.home {
-  margin-top: 70px;
-
-
+  margin-top: 100px;
+  padding-top: 70px;
+  display: grid;
+  place-items: center;
+  height: 80vh;
 }
 
 .home-container {
@@ -143,19 +159,19 @@ section.home {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 10px;
-  padding-left: 50px;
 }
 
 .home-title {
   font-family: "Londrina Outline", sans-serif;
   font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .home-subtitle {
   font-family: var(--h2-font);
-  padding: 40px 0;
+  padding: 50px 0;
   font-size: 4rem;
+  margin-bottom: 20px;
 }
 
 .home-subtitle,
@@ -168,7 +184,7 @@ section.home {
 .home-description {
   font-family: var(--paragraphe-font);
   color: #afafaf;
-  max-width: 500px;
+  width: 500px;
   line-height: 2.5;
   margin-bottom: 50px;
 }
@@ -181,15 +197,16 @@ section.home {
 .home-img {
   z-index: 2;
   width: 500px;
-  transform: translateY(-123%);
+  transform: translateY(-100%);
 }
 
 .home-triangle {
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  width: 500px;
-  height: 600px;
+  width: 450px;
+  height: 500px;
   background-color: var(--green-color);
   z-index: 1;
+  transform: translateX(10%);
 }
 
 /*=============== BUTTON CONSULTATION IMANE ===============*/
@@ -206,6 +223,7 @@ section.home {
   cursor: pointer;
   transition: all 0.4s ease;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
 }
 
 .main-btn span:last-child {
@@ -229,20 +247,6 @@ section.home {
 
 /* CYNTHIA DEBUT*/
 
-/* Valentin debut */
-
-body {
-  background-color: var(--darkGreen-color);
-}
-
-main {
-
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-}
-
-
 /* titre section 2 */
 #bienvenueChezMicka {
   color: white;
@@ -251,25 +255,24 @@ main {
   justify-content: space-between;
 }
 
-
 /*premier article à gauche : photo de Micka*/
 
 #illustration {
   display: block;
-  padding-top: 70px;
+  /* padding-top: 70px; */
 }
 
 .photo1 {
   z-index: -1;
-  width: 81%;
+  width: 90%;
+  transform: translateY(3%);
   /* height: 300px; */
 }
-
 
 .photo2 {
   width: 81%;
   z-index: 10;
-  transform: translateY(-100%);
+  transform: translateY(-115%);
 }
 
 /*deuxième article à droite: bio de Micka*/
@@ -280,7 +283,6 @@ main {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-
 }
 
 h2 {
@@ -302,7 +304,7 @@ p {
   letter-spacing: 1.5px;
 }
 
-button {
+.a-propos {
   font-family: var(--paragraphe-font);
   background-color: var(--green-color);
   color: var(--darkGreen-color);
@@ -312,8 +314,6 @@ button {
 }
 
 /* CYNTHIA FIN*/
-
-
 
 /* ABONNEMENT VALENTIN */
 
@@ -327,7 +327,7 @@ button {
 .abonnement h3 {
   font-family: var(--h2-font);
   margin-top: 15px;
-  font-size: 30px;
+  font-size: 2rem;
   color: white;
 }
 
@@ -344,21 +344,27 @@ button {
 
 #container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .program {
   background-color: var(--prog-color);
-  width: 28vw;
-  height: 88vh;
   border-radius: 8%;
+  width: 350px;
 }
 
 .program-vert {
   background-color: var(--green-color);
-  width: 28vw;
-  height: 88vh;
   border-radius: 8%;
+}
+
+.program-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .program-header img {
@@ -389,7 +395,7 @@ button {
   font-size: 1.5rem;
 }
 
-.btn {
+.reserve-btn {
   background-color: var(--green-color);
   color: #0d1715;
   border: none;
@@ -399,44 +405,40 @@ button {
   border-radius: 5px;
   margin-top: 25px;
   transition: transform 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.btn:hover {
-  transform: scale(1.15);
+.reserve-btn:hover {
+  transform: scale(1.05);
 }
 
 #btnV {
   background-color: var(--prog-color);
   color: var(--green-color);
-  border: none;
-  padding: 10px 20px;
-  font-size: 24px;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-top: 25px;
-  transition: transform 0.3s ease;
-}
-
-#btnV:hover {
-  transform: scale(1.15);
 }
 
 .checklist {
-  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa-circle-check {
   color: var(--green-color);
+  margin-right: 10px;
+}
+.fa-circle-xmark {
+  margin-right: 10px;
 }
 
 .prix {
-  margin: 40px;
+  margin: 20px 0;
   font-size: 2.5rem;
-  font-family: "Academy Engraved LET";
+  font-family: "Academy Engraved LET", sans-serif;
 }
 
 /* Valentin fin */
-
 
 /* SECTION AVIS IMANE  */
 .testimonials {
