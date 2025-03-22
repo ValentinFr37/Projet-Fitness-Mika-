@@ -1,7 +1,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Couleurs principales ==========*/
-  
+
   --green-color: #b3d537;
   --darkGreen-color: #0d1715;
   --prog-color: #1c231e;
@@ -44,12 +44,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  background: linear-gradient(
-    180deg,
-    #1c231e 0%,
-    #0d1715 70%,
-    rgba(179, 213, 55, 0.1) 100%
-  );
+  background: linear-gradient(180deg,
+      #1c231e 0%,
+      #0d1715 70%,
+      rgba(179, 213, 55, 0.1) 100%);
   height: 80px;
 }
 
@@ -229,6 +227,93 @@ section.home {
   transform: translateX(8px);
 }
 
+/* CYNTHIA DEBUT*/
+
+/* Valentin debut */
+
+body {
+  background-color: var(--darkGreen-color);
+}
+
+main {
+
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+
+/* titre section 2 */
+#bienvenueChezMicka {
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*premier article à gauche : photo de Micka*/
+
+#illustration {
+  display: block;
+  padding-top: 70px;
+}
+
+.photo1 {
+  z-index: -1;
+  width: 81%;
+  /* height: 300px; */
+}
+
+
+.photo2 {
+  width: 81%;
+  z-index: 10;
+  transform: translateY(-100%);
+}
+
+/*deuxième article à droite: bio de Micka*/
+
+#descriptionbio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+}
+
+h2 {
+  font-family: var(--h2-font);
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: var(--h2-font);
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: var(--paragraphe-font);
+  font-size: 14px;
+  color: var(--paragraph-color);
+  width: 60%;
+  line-height: 2;
+  letter-spacing: 1.5px;
+}
+
+button {
+  font-family: var(--paragraphe-font);
+  background-color: var(--green-color);
+  color: var(--darkGreen-color);
+  font-size: 1rem;
+  border-radius: 23%;
+  width: 24vw;
+}
+
+/* CYNTHIA FIN*/
+
+
 
 /* ABONNEMENT VALENTIN */
 
@@ -238,6 +323,7 @@ section.home {
   padding: 12vh;
   font-size: 3rem;
 }
+
 .abonnement h3 {
   font-family: var(--h2-font);
   margin-top: 15px;
@@ -281,6 +367,7 @@ section.home {
   margin-bottom: auto;
   filter: brightness(0.35);
 }
+
 .invalid {
   color: #6f6565;
 }
@@ -288,6 +375,7 @@ section.home {
 .valid {
   color: white;
 }
+
 .program-vert .valid {
   color: black;
 }
@@ -312,6 +400,7 @@ section.home {
   margin-top: 25px;
   transition: transform 0.3s ease;
 }
+
 .btn:hover {
   transform: scale(1.15);
 }
@@ -327,6 +416,7 @@ section.home {
   margin-top: 25px;
   transition: transform 0.3s ease;
 }
+
 #btnV:hover {
   transform: scale(1.15);
 }
@@ -338,11 +428,13 @@ section.home {
 .fa-circle-check {
   color: var(--green-color);
 }
+
 .prix {
   margin: 40px;
   font-size: 2.5rem;
   font-family: "Academy Engraved LET";
 }
+
 /* Valentin fin */
 
 
@@ -377,7 +469,7 @@ section.home {
 }
 
 .testimonial {
-  flex: 0 0 calc(33% - 20px); 
+  flex: 0 0 calc(33% - 20px);
   background: var(--prog-color);
   padding: 20px 0;
   border-radius: 10px;
@@ -503,6 +595,7 @@ section.home {
   line-height: 1.7;
   margin-bottom: 50px;
 }
+
 .imc-form {
   display: flex;
   gap: 20px;
@@ -538,7 +631,5 @@ form .main-btn {
   width: 300px;
   justify-self: center;
 }
+
 /*=============== FIN CALCULE IMC IMANE ===============*/
-
-
-
