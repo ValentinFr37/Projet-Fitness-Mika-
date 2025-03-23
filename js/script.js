@@ -45,7 +45,6 @@ function resetInterval() {
 // Initialisation
 showTestimonials();
 
-
 // Loader après 2 secondes
 setTimeout(function () {
   document.getElementById("loadingScreen").style.display = "none"; // Masque la page de chargement
