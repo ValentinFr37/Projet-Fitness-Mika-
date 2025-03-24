@@ -73,8 +73,7 @@ header {
   margin: auto;
 }
 
-nav ul,
-li {
+nav ul li {
   display: inline-flex;
   justify-content: space-between;
 }
@@ -229,7 +228,7 @@ section.home {
 
 /* CYNTHIA DEBUT*/
 
-/* Valentin debut */
+/* ======================Valentin debut *===========================*/
 
 body {
   background-color: var(--darkGreen-color);
@@ -283,17 +282,17 @@ main {
 
 }
 
-h2 {
+#Bienvenue {
   font-family: var(--h2-font);
   font-size: 2rem;
 }
 
-h3 {
+#commando {
   font-family: var(--h2-font);
   font-size: 1.5rem;
 }
 
-p {
+#bio {
   font-family: var(--paragraphe-font);
   font-size: 14px;
   color: var(--paragraph-color);
@@ -302,7 +301,7 @@ p {
   letter-spacing: 1.5px;
 }
 
-button {
+.a-propos {
   font-family: var(--paragraphe-font);
   background-color: var(--green-color);
   color: var(--darkGreen-color);
@@ -344,20 +343,22 @@ button {
 
 #container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .program {
   background-color: var(--prog-color);
   width: 28vw;
-  height: 88vh;
+  max-width: 30%;
+  height:   670px;
   border-radius: 8%;
 }
 
 .program-vert {
   background-color: var(--green-color);
   width: 28vw;
-  height: 88vh;
+  max-width: 30%;
+  height: 670px;
   border-radius: 8%;
 }
 
@@ -393,11 +394,11 @@ button {
   background-color: var(--green-color);
   color: #0d1715;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 40px;
   font-size: 24px;
   font-weight: bold;
   border-radius: 5px;
-  margin-top: 25px;
+  margin-top: 10%;
   transition: transform 0.3s ease;
 }
 
@@ -409,11 +410,11 @@ button {
   background-color: var(--prog-color);
   color: var(--green-color);
   border: none;
-  padding: 10px 20px;
+  padding: 10px 40px;
   font-size: 24px;
   font-weight: bold;
   border-radius: 5px;
-  margin-top: 25px;
+  margin-top: 10%;
   transition: transform 0.3s ease;
 }
 
@@ -423,10 +424,24 @@ button {
 
 .checklist {
   margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 5px;
 }
+.checklist li {
+  display: flex;
+  justify-content: flex-start;  
+  align-items: center;  
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
 
 .fa-circle-check {
   color: var(--green-color);
+  margin-right: 30px;
+  text-align: left;
 }
 
 .prix {
@@ -434,6 +449,11 @@ button {
   font-size: 2.5rem;
   font-family: "Academy Engraved LET";
 }
+
+.invalid p{
+  margin-right: 28px;
+}
+
 
 /* Valentin fin */
 
