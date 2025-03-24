@@ -226,9 +226,9 @@ section.home {
   transform: translateX(8px);
 }
 
-/* CYNTHIA DEBUT*/
+/*==================== CYNTHIA DEBUT====================*/
 
-/* ======================Valentin debut *===========================*/
+
 
 body {
   background-color: var(--darkGreen-color);
@@ -310,11 +310,11 @@ main {
   width: 24vw;
 }
 
-/* CYNTHIA FIN*/
+/* ====================CYNTHIA FIN====================*/
 
 
 
-/* ABONNEMENT VALENTIN */
+/* ====================ABONNEMENT VALENTIN ====================*/
 
 .main-section-title {
   font-family: var(--h2-font);
@@ -463,10 +463,10 @@ main {
 }
 
 
-/* Valentin fin */
+/*==================== Valentin fin==================== */
 
 
-/* SECTION AVIS IMANE  */
+/* ====================SECTION AVIS IMANE  ====================*/
 .testimonials {
   text-align: center;
   padding: 50px 20px;
