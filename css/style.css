@@ -734,6 +734,7 @@ form .main-btn {
   color: var(--paragraphe-color);
   font-size: 1.rem;
   text-align: center;
+  width: 70%;
 }
 .formulaire a{
   color: var(--green-color);
