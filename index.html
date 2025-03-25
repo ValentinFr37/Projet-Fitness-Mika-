@@ -20,13 +20,9 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/loader.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="./css/mobile.css"
-      only
-      media="screen and (max-width: 768px)"
-    />
-  </head>
+    <link rel="stylesheet" href="./css/mobile.css" only media="screen and (max-width: 768px)" />
+
+</head>
 
   <body>
     <div class="loading-container" id="loadingScreen">
@@ -101,112 +97,90 @@
 
       <!--==================== FIN HOME IMANE ====================-->
 
-      <!-- CYNTHIA: DEBUT -->
+        <!--==================== CYNTHIA: DEBUT ====================-->
 
-      <section id="bienvenueChezMicka">
-        <article id="illustration">
-          <img src="polygonSection2.png" alt="photo1" class="photo1" />
-          <img src="assets/choose-img.png" alt="photo2" class="photo2" />
-        </article>
+        <section id="bienvenueChezMicka">
 
-        <article id="descriptionbio">
-          <h2>Bienvenue Chez Micka</h2>
+            <article id="illustration">
+                <img src="polygonSection2.png" alt="photo1" class="photo1">
+                <img src="assets/choose-img.png" alt="photo2" class="photo2">
 
-          <h3>Le Coaching Commando</h3>
+            </article>
 
-          <p>
-            Ancien militaire, j’ai gardé la discipline, l’endurance et le goût
-            du défi. Mon objectif ? Vous aider à repousser vos limites, sans
-            excuses, mais toujours avec bonne humeur. Avec moi, chaque séance
-            est un challenge : on bouge, on progresse et on se dépasse ! 💪🔥
-          </p>
+            <article id="descriptionbio">
+                <h2 id="Bienvenue">Bienvenue Chez Micka</h2>
 
-          <button class="a-propos">A propos</button>
-        </article>
-      </section>
+                <h3 id="commando">Le Coaching Commando</h3>
 
-      <!-- CYNTHIA: FIN -->
+                <p id="bio">Ancien militaire, j’ai gardé la discipline, l’endurance et le goût du défi. Mon objectif ? Vous aider
+                    à
+                    repousser vos limites, sans excuses, mais toujours avec bonne humeur. Avec moi, chaque séance est un
+                    challenge : on bouge, on progresse et on se dépasse ! 💪🔥</p>
 
-      <!-- Valentin Début -->
-      <section class="abonnement">
-        <h2 class="main-section-title main-section-title title-avis">
-          Nos abonnements
-        </h2>
-        <div id="container">
-          <div class="program">
-            <div class="program-header">
-              <img src="assets/pricing1.png" alt="Basique" />
-              <h3>Basique</h3>
-              <p class="prix">30€</p>
+                <button class="a-propos">A propos</button>
+
+            </article>
+
+        </section>
+
+        <!--==================== CYNTHIA: FIN ====================-->
+
+
+        <!--==================== Valentin Début ====================-->
+        <section class="abonnement">
+            <h2 class="main-section-title main-section-title title-avis">Nos abonnements</h2>
+            <div id="container">
+                <div class="program">
+                    <div class="program-header">
+                        <img src="assets/pricing1.png" alt="Basique">
+                        <h3>Basique</h3>
+                        <p class="prix">30€</p>
+                    </div>
+                    <ul class=" checklist">
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(2 jours/semaine)</li>
+                        <li class="invalid"><p>✖</p> Accès aux cours collectifs</li>
+                        <li class="invalid"><p>✖</p> Programme nutrition</li>
+                    </ul>
+                    <button class="btn">Réserver →</button>
+                </div>
+
+                <div class="program-vert">
+                    <div class="program-header">
+                        <img src="assets/pricing2.png" alt="Silver">
+                        <h3 id="silver">Silver</h3>
+                        <p class="prix">50€</p>
+                    </div>
+                    <ul class="checklist">
+                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Accès à la salle de sport</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Coaching personnalisé <br>(3 jours/semaine)</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e"></i>Accès aux cours collectifs</li>
+                        <li class="invalid"><p>✖</p>  Programme nutrition</li>
+                    </ul>
+                    <button id="btnV">Réserver →</button>
+                </div>
+
+                <div class="program">
+                    <div class="program-header">
+                        <img src="assets/pricing3.png" alt="Premium">
+                        <h3>Premium</h3>
+                        <p class="prix">100€</p>
+                    </div>
+                    <ul class="checklist">
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(5 jours/semaine)</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Accès aux cours collectifs</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Programme nutrition</li>
+                    </ul>
+                    <button class="btn">Réserver →</button>
+                </div>
             </div>
-            <ul class="checklist">
-              <li class="valid">
-                <i class="fa-solid fa-circle-check"></i> 5 jours par semaine
-              </li>
-              <li class="valid">
-                <i class="fa-solid fa-circle-check"></i> 5 jours par semaine
-              </li>
-              <li class="invalid">
-                <i class="fa-solid fa-circle-xmark"></i> 5 jours par semaine
-              </li>
-              <li class="invalid">
-                <i class="fa-solid fa-circle-xmark"></i> 5 jours par semaine
-              </li>
-            </ul>
-            <button class="reserve-btn">Réserver →</button>
-          </div>
+        </section>
 
-          <div class="program-vert program">
-            <div class="program-header">
-              <img src="assets/pricing2.png" alt="Silver" />
-              <h3 id="silver">Silver</h3>
-              <p class="prix">50€</p>
-            </div>
-            <ul class="checklist">
-              <li class="valid">
-                <i class="fa-solid fa-circle-check" style="color: #1c231e"></i>
-                5 jours par semaine
-              </li>
-              <li class="valid">
-                <i class="fa-solid fa-circle-check" style="color: #1c231e"></i>
-                5 jours par semaine
-              </li>
-              <li class="valid">
-                <i class="fa-solid fa-circle-check" style="color: #1c231e"></i>
-                5 jours par semaine
-              </li>
-              <li class="invalid">
-                <i class="fa-solid fa-circle-xmark"></i> 5 jours par semaine
-              </li>
-            </ul>
-            <button id="btnV" class="reserve-btn">Réserver →</button>
-          </div>
-
-          <div class="program">
-            <div class="program-header">
-              <img src="assets/pricing3.png" alt="Premium" />
-              <h3>Premium</h3>
-              <p class="prix">100€</p>
-            </div>
-            <ul class="checklist">
-              <li class="valid">
-                <i class="fa-solid fa-circle-check"></i> 5 jours par semaine
-              </li>
-              <li class="valid">
-                <i class="fa-solid fa-circle-check"></i> 5 jours par semaine
-              </li>
-              <li class="valid">
-                <i class="fa-solid fa-circle-check"></i> 5 jours par semaine
-              </li>
-              <li class="valid">
-                <i class="fa-solid fa-circle-check"></i> 5 jours par semaine
-              </li>
-            </ul>
-            <button class="reserve-btn">Réserver →</button>
-          </div>
-        </div>
-      </section>
-      <!-- Valentin Fin -->
+        <section class="abonnement-mobile">
+          
+        </section>
+        <!--==================== Valentin Fin ====================-->
 
       <!--==================== FIN CHOISIR COACHING COMMANDO IMANE ====================-->
       <section class="choose">
