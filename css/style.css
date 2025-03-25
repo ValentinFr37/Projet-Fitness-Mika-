@@ -73,8 +73,7 @@ header {
   margin: auto;
 }
 
-nav ul,
-li {
+nav ul li {
   display: inline-flex;
   justify-content: space-between;
 }
@@ -227,20 +226,108 @@ section.home {
   transform: translateX(8px);
 }
 
+/*==================== CYNTHIA DEBUT====================*/
 
-/* ABONNEMENT VALENTIN */
+
+
+body {
+  background-color: var(--darkGreen-color);
+}
+
+main {
+
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+
+/* titre section 2 */
+#bienvenueChezMicka {
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*premier article à gauche : photo de Micka*/
+
+#illustration {
+  display: block;
+  padding-top: 70px;
+}
+
+.photo1 {
+  z-index: -1;
+  width: 81%;
+  /* height: 300px; */
+}
+
+
+.photo2 {
+  width: 81%;
+  z-index: 10;
+  transform: translateY(-100%);
+}
+
+/*deuxième article à droite: bio de Micka*/
+
+#descriptionbio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+}
+
+#Bienvenue {
+  font-family: var(--h2-font);
+  font-size: 2rem;
+}
+
+#commando {
+  font-family: var(--h2-font);
+  font-size: 1.5rem;
+}
+
+#bio {
+  font-family: var(--paragraphe-font);
+  font-size: 14px;
+  color: var(--paragraph-color);
+  width: 60%;
+  line-height: 2;
+  letter-spacing: 1.5px;
+}
+
+.a-propos {
+  font-family: var(--paragraphe-font);
+  background-color: var(--green-color);
+  color: var(--darkGreen-color);
+  font-size: 1rem;
+  border-radius: 23%;
+  width: 24vw;
+}
+
+/* ====================CYNTHIA FIN====================*/
+
+
+
+/* ====================ABONNEMENT VALENTIN ====================*/
 
 .main-section-title {
   font-family: var(--h2-font);
   color: var(--green-color);
-  padding: 12vh;
-  font-size: 3rem;
+  padding: 8vh 0;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .abonnement h3 {
   font-family: var(--h2-font);
   margin-top: 15px;
-  font-size: 30px;
+  font-size: 28px;
   color: white;
 }
 
@@ -250,33 +337,38 @@ section.home {
 
 .abonnement {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
   text-align: center;
+  padding: 20px;
 }
 
 #container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.program {
+.program,
+.program-vert {
   background-color: var(--prog-color);
-  width: 28vw;
-  height: 88vh;
+  width: 25%;
+  max-width: 350px;
+  height: auto;
   border-radius: 8%;
+  padding: 20px;
 }
 
 .program-vert {
   background-color: var(--green-color);
-  width: 28vw;
-  height: 88vh;
-  border-radius: 8%;
 }
 
 .program-header img {
   margin-top: 10px;
-  width: 30%;
+  width: 50px;
   margin-bottom: auto;
   filter: brightness(0.35);
 }
@@ -295,23 +387,28 @@ section.home {
 
 .prix {
   font-size: 2rem;
+  margin: 20px 0;
 }
 
 .abonnement li {
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
-.btn {
+.btn,
+#btnV {
   background-color: var(--green-color);
   color: #0d1715;
   border: none;
-  padding: 10px 20px;
-  font-size: 24px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
   font-weight: bold;
   border-radius: 5px;
-  margin-top: 25px;
+  margin-top: 20px;
   transition: transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
 }
 
 .btn:hover {
@@ -335,7 +432,17 @@ section.home {
 }
 
 .checklist {
-  margin-top: 70px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 1.2rem;
 }
 
 .fa-circle-check {
@@ -351,7 +458,7 @@ section.home {
 /* Valentin fin */
 
 
-/* SECTION AVIS IMANE  */
+/* ====================SECTION AVIS IMANE  ====================*/
 .testimonials {
   text-align: center;
   padding: 50px 20px;
@@ -546,65 +653,3 @@ form .main-btn {
 }
 
 /*=============== FIN CALCULE IMC IMANE ===============*/
-
-
-/*=============== FOOTER ===============*/
-
-.footer {
-  background-color: #0D1715;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.footer-logo {
-  width: 200px;
-  margin-bottom: 10px;
-  margin-top: 50px;
-}
-
-.footer-title {
-  font-weight: bold;
-  font-size: 1.5em;
-  font-family: var(--h2-font);
-  margin: 15px 0;
-
-}
-
-.footer-subtitle {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.footer-line {
-  height: 2px;
-  width: 350px;
-  background-color: #B3D537;
-  display: inline-block;
-  margin: 10px 15px;
-}
-
-.social-icons {
-  margin-top: 10px;
-}
-
-.social-icons a {
-  color: white;
-  font-size: 24px;
-  margin: 0 10px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  color: #B3D537;
-}
-
-.footer-copy {
-  font-size: 12px;
-  margin-top: 10px;
-  opacity: 0.7;
-}
-
-/*=============== FIN FOOTER ===============*/
