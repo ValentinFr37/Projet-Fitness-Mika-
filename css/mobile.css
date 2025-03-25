@@ -4,14 +4,47 @@ header {
   padding: 10px 0;
   display: flex;
   flex-direction: row-reverse;
+  position: relative;
+}
+
+.nav-toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+  z-index: 7;
+  
+}
+
+
+.fa-xmark {
+  display: block;
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: hsla(180, 12%, 8%, .8);
+  backdrop-filter: blur(32px);
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  border-left: 2px solid white;
+  transition: right .3s;
+  z-index: 6;
 }
 
 .navbar nav {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .navbar a {
-  display: none;
+  display: flex;
 }
 
 .logo img {
@@ -19,15 +52,51 @@ header {
 }
 
 .nav-links {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  padding: 5rem 0 0 3rem;
+  color: black;
+  transition: color .3s;
+}
+
+.nav-links:hover {
+  color: green;
 }
 
 .fa-bars {
   display: block;
-  font-size: 3rem;
+}
+
+.fa-bars, .fa-xmark{
+  font-size: 1.5rem;
   color: white;
   padding: 10px;
   cursor: pointer;
+}
+
+.fa-xmark {
+  display: none;
+}
+
+
+.nav-close {
+  position: absolute;
+  top: 1.7rem;
+  right: 0.2rem;
+  z-index: 7;
+}
+
+.nav-close.active {
+  display: none;
+}
+
+.show-menu {
+  right: 0;
+}
+
+.active-link {
+  color: green;
 }
 
 
@@ -176,4 +245,26 @@ section.home {
   margin: auto;
 }
 
+
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: green;
+  display: inline-flex;
+  padding: .35rem;
+  color: black;
+  font-size: 1.25rem;
+  z-index: 20;
+  transition: .3S;
+}
+
+.scrollup:hover {
+  transform: translateY(-.25rem);
+}
+
+.show-scroll {
+  bottom: 3rem;
+}
 
