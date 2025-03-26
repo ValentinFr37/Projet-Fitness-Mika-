@@ -171,3 +171,12 @@ section.home {
 .contact-form{
   width: 80vw;
 }
+
+.contact-form input{
+  text-align: center;
+  font-size: 1.3rem;
+}
+.contact-form textarea{
+  text-align: center;
+  font-size: 1.3rem;
+}
