@@ -194,3 +194,25 @@ section.home {
 	margin-top: 0;
 }
 /* fin de modifs*/
+.partie-1 {
+	display: none;
+}
+
+.formulaire {
+	justify-content: center;
+}
+.partie-2 p {
+	width: 100%;
+}
+.contact-form {
+	width: 80vw;
+}
+
+.contact-form input {
+	text-align: center;
+	font-size: 1.3rem;
+}
+.contact-form textarea {
+	text-align: center;
+	font-size: 1.3rem;
+}
