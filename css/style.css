@@ -1,741 +1,810 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
-  /*========== Couleurs principales ==========*/
+	/*========== Couleurs principales ==========*/
 
-  --green-color: #b3d537;
-  --darkGreen-color: #0d1715;
-  --prog-color: #1c231e;
-  --paragraphe-color: #AFAFAF;
+	--green-color: #b3d537;
+	--darkGreen-color: #0d1715;
+	--prog-color: #1c231e;
+	--paragraphe-color: #afafaf;
 
-  /*========== Polices principales ==========*/
+	/*========== Polices principales ==========*/
 
-  --paragraphe-font: "Titillium Web", sans-serif;
-  --h2-font: "Black Ops One", sans-serif;
+	--paragraphe-font: "Titillium Web", sans-serif;
+	--h2-font: "Black Ops One", sans-serif;
 }
 
 /*=============== BASE ===============*/
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--darkGreen-color);
+	background-color: var(--darkGreen-color);
 }
 
 main {
-  max-width: 1200px;
-  margin: auto;
+	max-width: 1200px;
+	margin: auto;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 /*=============== HEADER THOMAS ===============*/
 
 .fa-bars,
 .fa-xmark {
-  display: none;
+	display: none;
 }
 
-
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  background: linear-gradient(180deg,
-      #1c231e 0%,
-      #0d1715 70%,
-      rgba(179, 213, 55, 0.1) 100%);
-  height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	background: linear-gradient(
+		180deg,
+		#1c231e 0%,
+		#0d1715 70%,
+		rgba(179, 213, 55, 0.1) 100%
+	);
+	height: 80px;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  font-size: 75px;
-  font-weight: bold;
-  color: #fff;
+	display: flex;
+	align-items: center;
+	font-size: 75px;
+	font-weight: bold;
+	color: #fff;
 }
 
 .logo img {
-  width: 200px;
-  margin-right: 10px;
-  margin-top: 25px;
+	width: 200px;
+	margin-right: 10px;
+	margin-top: 25px;
 }
 
 .navbar {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: auto;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: auto;
 }
 
 nav ul li {
-  display: inline-flex;
-  justify-content: space-between;
+	display: inline-flex;
+	justify-content: space-between;
 }
 
 nav a {
-  text-decoration: none;
-  color: #fff;
-  margin-right: 30px;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.3s ease-in-out;
+	text-decoration: none;
+	color: #fff;
+	margin-right: 30px;
+	font-size: 1rem;
+	font-weight: 500;
+	transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-  color: #a3ff4b;
+	color: #a3ff4b;
 }
 
 .main-btn-header {
-  padding: 13px 8px;
-  background-color: #b3d537;
-  color: black;
-  font-weight: bold;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  border: 2px solid #b3d537;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	padding: 13px 8px;
+	background-color: #b3d537;
+	color: black;
+	font-weight: bold;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	border: 2px solid #b3d537;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .main-btn-header span:last-child {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .main-btn-header:hover {
-  color: white;
-  background-color: #1d2c1f;
-  box-shadow: 0 0 10px #afafaf;
+	color: white;
+	background-color: #1d2c1f;
+	box-shadow: 0 0 10px #afafaf;
 }
 
 .main-btn-header i {
-  margin-left: 10px;
-  transition: transform 0.3s ease;
+	margin-left: 10px;
+	transition: transform 0.3s ease;
 }
 
 .main-btn-header:hover i {
-  transform: translateX(8px);
+	transform: translateX(8px);
 }
 
 /*=============== HOME IMANE ===============*/
 section.home {
-  margin-top: 70px;
-
-
+	margin-top: 70px;
 }
 
 .home-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .home-data {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 10px;
-  padding-left: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 10px;
+	padding-left: 50px;
 }
 
 .home-title {
-  font-family: "Londrina Outline", sans-serif;
-  font-size: 3rem;
+	font-family: "Londrina Outline", sans-serif;
+	font-size: 3rem;
 }
 
 .home-subtitle {
-  font-family: var(--h2-font);
-  padding: 40px 0;
-  font-size: 4rem;
+	font-family: var(--h2-font);
+	padding: 40px 0;
+	font-size: 4rem;
 }
 
 .home-subtitle,
 .home-title {
-  letter-spacing: 1.5px;
-  color: white;
-  font-weight: bold;
+	letter-spacing: 1.5px;
+	color: white;
+	font-weight: bold;
 }
 
 .home-description {
-  font-family: var(--paragraphe-font);
-  color: #afafaf;
-  max-width: 500px;
-  line-height: 2.5;
-  margin-bottom: 50px;
+	font-family: var(--paragraphe-font);
+	color: #afafaf;
+	max-width: 500px;
+	line-height: 2.5;
+	margin-bottom: 50px;
 }
 
 .home-images {
-  max-height: 500px;
-  overflow: hidden;
+	max-height: 500px;
+	overflow: hidden;
 }
 
 .home-img {
-  z-index: 2;
-  width: 500px;
-  transform: translateY(-123%);
+	z-index: 2;
+	width: 500px;
+	transform: translateY(-123%);
 }
 
 .home-triangle {
-  clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  width: 500px;
-  height: 600px;
-  background-color: var(--green-color);
-  z-index: 1;
+	clip-path: polygon(100% 0, 0 100%, 100% 100%);
+	width: 500px;
+	height: 600px;
+	background-color: var(--green-color);
+	z-index: 1;
 }
 
 /*=============== BUTTON CONSULTATION IMANE ===============*/
 
 .main-btn {
-  padding: 18px 36px;
-  background-color: #b3d537;
-  color: black;
-  font-weight: bold;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  border: 2px solid #b3d537;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	padding: 18px 36px;
+	background-color: #b3d537;
+	color: black;
+	font-weight: bold;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	border: 2px solid #b3d537;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .main-btn span:last-child {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .main-btn:hover {
-  color: white;
-  background-color: #1d2c1f;
-  box-shadow: 0 0 10px #afafaf;
+	color: white;
+	background-color: #1d2c1f;
+	box-shadow: 0 0 10px #afafaf;
 }
 
 .main-btn i {
-  margin-left: 10px;
-  transition: transform 0.3s ease;
+	margin-left: 10px;
+	transition: transform 0.3s ease;
 }
 
 .main-btn:hover i {
-  transform: translateX(8px);
+	transform: translateX(8px);
 }
 
 /*==================== CYNTHIA DEBUT====================*/
 
-
-
 body {
-  background-color: var(--darkGreen-color);
+	background-color: var(--darkGreen-color);
 }
 
 main {
-
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
 }
-
 
 /* titre section 2 */
 #bienvenueChezMicka {
-  color: white;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
+	color: white;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
 }
-
 
 /*premier article à gauche : photo de Micka*/
 
 #illustration {
-  display: block;
-  padding-top: 70px;
+	display: block;
+	padding-top: 70px;
 }
 
 .photo1 {
-  z-index: -1;
-  width: 81%;
-  /* height: 300px; */
+	z-index: -1;
+	width: 81%;
+	/* height: 300px; */
 }
 
-
 .photo2 {
-  width: 81%;
-  z-index: 10;
-  transform: translateY(-100%);
+	width: 81%;
+	z-index: 10;
+	transform: translateY(-100%);
 }
 
 /*deuxième article à droite: bio de Micka*/
 
 #descriptionbio {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
 }
 
 #Bienvenue {
-  font-family: var(--h2-font);
-  font-size: 2rem;
+	font-family: var(--h2-font);
+	font-size: 2rem;
 }
 
 #commando {
-  font-family: var(--h2-font);
-  font-size: 1.5rem;
+	font-family: var(--h2-font);
+	font-size: 1.5rem;
 }
 
 #bio {
-  font-family: var(--paragraphe-font);
-  font-size: 14px;
-  color: var(--paragraph-color);
-  width: 60%;
-  line-height: 2;
-  letter-spacing: 1.5px;
+	font-family: var(--paragraphe-font);
+	font-size: 14px;
+	color: var(--paragraph-color);
+	width: 60%;
+	line-height: 2;
+	letter-spacing: 1.5px;
 }
 
 .a-propos {
-  font-family: var(--paragraphe-font);
-  background-color: var(--green-color);
-  color: var(--darkGreen-color);
-  font-size: 1rem;
-  border-radius: 23%;
-  width: 24vw;
+	font-family: var(--paragraphe-font);
+	background-color: var(--green-color);
+	color: var(--darkGreen-color);
+	font-size: 1rem;
+	border-radius: 23%;
+	width: 24vw;
 }
 
 /* ====================CYNTHIA FIN====================*/
 
-
-
 /* ====================ABONNEMENT VALENTIN ====================*/
 
 .main-section-title {
-  font-family: var(--h2-font);
-  color: var(--green-color);
-  padding: 8vh 0;
-  font-size: 2.5rem;
-  text-align: center;
+	font-family: var(--h2-font);
+	color: var(--green-color);
+	padding: 8vh 0;
+	font-size: 2.5rem;
+	text-align: center;
 }
 
 .abonnement h3 {
-  font-family: var(--h2-font);
-  margin-top: 15px;
-  font-size: 28px;
-  color: white;
+	font-family: var(--h2-font);
+	margin-top: 15px;
+	font-size: 28px;
+	color: white;
 }
 
 #silver {
-  color: var(--prog-color);
+	color: var(--prog-color);
 }
 
 .abonnement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
 }
 
 #container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	max-width: 1200px;
+	margin: auto;
 }
 
-.program, .program-vert {
-  background-color: var(--prog-color);
-  width: 25%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 8%;
-  padding: 20px;
+.program,
+.program-vert {
+	background-color: var(--prog-color);
+	width: 25%;
+	max-width: 350px;
+	height: auto;
+	border-radius: 8%;
+	padding: 20px;
 }
 
 .program-vert {
-  background-color: var(--green-color);
+	background-color: var(--green-color);
 }
 
 .program-header img {
-  margin-top: 10px;
-  width: 50px;
-  margin-bottom: auto;
-  filter: brightness(0.35);
+	margin-top: 10px;
+	width: 50px;
+	margin-bottom: auto;
+	filter: brightness(0.35);
 }
 
 .invalid {
-  color: #6f6565;
+	color: #6f6565;
 }
 
 .valid {
-  color: white;
+	color: white;
 }
 
 .program-vert .valid {
-  color: black;
+	color: black;
 }
 
 .prix {
-  font-size: 2rem;
-  margin: 20px 0;
+	font-size: 2rem;
+	margin: 20px 0;
 }
 
 .abonnement li {
-  padding: 10px;
-  font-size: 1.2rem;
-  text-align: left;
+	padding: 10px;
+	font-size: 1.2rem;
+	text-align: left;
 }
 
-.btn, #btnV {
-  background-color: var(--green-color);
-  color: #0d1715;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-top: 20px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  text-align: center;
+.btn,
+#btnV {
+	background-color: var(--green-color);
+	color: #0d1715;
+	border: none;
+	padding: 12px 20px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-top: 20px;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+	text-align: center;
 }
 
-.btn:hover, #btnV:hover {
-  transform: scale(1.1);
+.btn:hover,
+#btnV:hover {
+	transform: scale(1.1);
 }
 
 #btnV {
-  background-color: var(--prog-color);
-  color: var(--green-color);
+	background-color: var(--prog-color);
+	color: var(--green-color);
 }
 
 .checklist {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
 }
 
 .checklist li {
-  display: flex;
-  align-items: center;
-  padding: 8px 0;
-  font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+	padding: 8px 0;
+	font-size: 1.2rem;
 }
 
 .fa-circle-check {
-  color: var(--green-color);
-  margin-right: 15px;
+	color: var(--green-color);
+	margin-right: 15px;
 }
 
 .invalid p {
-  margin-right: 15px;
+	margin-right: 15px;
 }
 
 @media screen and (max-width: 768px) {
-  #container {
-    flex-direction: column;
-    align-items: center;
-  }
+	#container {
+		flex-direction: column;
+		align-items: center;
+	}
 
-  .program, .program-vert {
-    width: 90%;
-    max-width: 100%;
-    padding: 15px;
-  }
+	.program,
+	.program-vert {
+		width: 90%;
+		max-width: 100%;
+		padding: 15px;
+	}
 
-  .btn, #btnV {
-    width: 100%;
-  }
+	.btn,
+	#btnV {
+		width: 100%;
+	}
 
-  .checklist li {
-    font-size: 1rem;
-  }
+	.checklist li {
+		font-size: 1rem;
+	}
 }
-
 
 /*==================== Valentin fin==================== */
 
+/*==================== PROGRAMME CYNTHIA: DEBUT ====================*/
+.trainings {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	color: white;
+	height: 100vh;
+	justify-content: space-between;
+}
+.trainings h3 {
+	font-family: var(--h2-font);
+	margin-top: 15px;
+	font-size: 28px;
+	color: var(--green-color);
+}
+#program-listing {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	max-width: 1200px;
+	margin: auto;
+}
+.tickets {
+	background-color: var(--prog-color);
+	width: 17%;
+	max-width: 350px;
+	height: auto;
+	border-radius: 8%;
+	padding: 20px;
+	font-family: var(--paragraphe-font);
+	transition: transform 0.3s ease-in-out;
+}
+
+.tickets:hover {
+	color: white;
+	background-color: #1d2c1f;
+	box-shadow: 0 0 10px #afafaf;
+	transform: scale(1.1);
+	transition: transform 0.3s ease-in-out;
+}
+
+.training-header img {
+	margin-top: 10px;
+	width: 50px;
+	margin-bottom: auto;
+}
+.trainings p {
+	padding: 10px;
+	font-size: 1.2rem;
+	font-family: var(--paragraphe-font);
+	color: #afafaf;
+	max-width: 500px;
+	line-height: 2.5;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+	#program-listing {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#musculation,
+	#cardio-training,
+	#crossfit,
+	#HIT {
+		width: 90%;
+		max-width: 100%;
+		padding: 15px;
+	}
+}
+/*==================== PROGRAMME CYNTHIA: FIN ====================*/
 
 /* ====================SECTION AVIS IMANE  ====================*/
 .testimonials {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: var(--darkGreen-color);
-  margin-top: 100px;
+	text-align: center;
+	padding: 50px 20px;
+	background-color: var(--darkGreen-color);
+	margin-top: 100px;
 }
 
 /* Carrousel */
 .carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
 }
 
 /* Conteneur des avis */
 .carousel-container {
-  display: flex;
-  gap: 20px;
-  width: 100%;
-  transition: transform 0.3s ease-in-out;
+	display: flex;
+	gap: 20px;
+	width: 100%;
+	transition: transform 0.3s ease-in-out;
 }
 
 .carousel-track {
-  display: flex;
-  gap: 20px;
-  transition: transform 0.5s ease-in-out;
+	display: flex;
+	gap: 20px;
+	transition: transform 0.5s ease-in-out;
 }
 
 .testimonial {
-  flex: 0 0 calc(33% - 20px);
-  background: var(--prog-color);
-  padding: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+	flex: 0 0 calc(33% - 20px);
+	background: var(--prog-color);
+	padding: 20px 0;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 /* En-tête de l'avis */
 .testimonial-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
 }
 
 .testimonial-name {
-  font-family: var(--paragraphe-font);
-  color: #ffffff;
-  font-size: 1rem;
+	font-family: var(--paragraphe-font);
+	color: #ffffff;
+	font-size: 1rem;
 }
 
 .testimonial-name::after {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("./../assets/Google.png");
-  background-size: contain;
-  margin-left: 20px;
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("./../assets/Google.png");
+	background-size: contain;
+	margin-left: 20px;
 }
 
 /* Date */
 .testimonial-date {
-  font-size: 0.8rem;
-  color: gray;
-  font-family: var(--paragraphe-font);
+	font-size: 0.8rem;
+	color: gray;
+	font-family: var(--paragraphe-font);
 }
 
 /* Étoiles */
 .testimonial-star i {
-  color: transparent;
-  background: linear-gradient(60deg, #f39c12, #f1c40f, #ffffff, #ffffff);
-  background-clip: text;
-  font-size: 1.2rem;
+	color: transparent;
+	background: linear-gradient(60deg, #f39c12, #f1c40f, #ffffff, #ffffff);
+	background-clip: text;
+	font-size: 1.2rem;
 }
 
 /* Texte de l'avis */
 .testimonial-text {
-  font-size: 1rem;
-  margin-top: 10px;
-  color: #fafafa;
-  line-height: 1.5;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
+	font-size: 1rem;
+	margin-top: 10px;
+	color: #fafafa;
+	line-height: 1.5;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
 }
 
 /* Boutons de navigation */
 .carousel-btn {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 10px;
-  color: #fafafa;
-  transition: 0.3s;
+	background: none;
+	border: none;
+	font-size: 2rem;
+	cursor: pointer;
+	padding: 10px;
+	color: #fafafa;
+	transition: 0.3s;
 }
 
 .carousel-btn:hover {
-  color: var(--green-color, #28a745);
+	color: var(--green-color, #28a745);
 }
 
 .evalutaion-google p {
-  color: var(--green-color);
-  font-size: 1.8rem;
-  margin-top: 30px;
-  font-family: var(--paragraphe-font);
+	color: var(--green-color);
+	font-size: 1.8rem;
+	margin-top: 30px;
+	font-family: var(--paragraphe-font);
 }
 
 /*=============== CALCULE IMC IMANE ===============*/
 
 .calculate-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 40px;
 }
 
 .calculate-content {
-  width: 70%;
-  margin: auto;
-  padding: 0 40px;
+	width: 70%;
+	margin: auto;
+	padding: 0 40px;
 }
 
 .calculate-content .section-titles {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .section-title-border {
-  font-family: "Londrina Outline", sans-serif;
-  color: white;
-  font-size: 3rem;
-  letter-spacing: 0.6rem;
-  margin-bottom: 40px;
+	font-family: "Londrina Outline", sans-serif;
+	color: white;
+	font-size: 3rem;
+	letter-spacing: 0.6rem;
+	margin-bottom: 40px;
 }
 
 .section-title-border span {
-  font-family: var(--h2-font);
-  padding: 40px 0;
-  font-size: 3.5rem;
+	font-family: var(--h2-font);
+	padding: 40px 0;
+	font-size: 3.5rem;
 }
 
 .calculate-description {
-  font-family: var(--paragraphe-font);
-  color: #afafaf;
-  max-width: 500px;
-  line-height: 1.7;
-  margin-bottom: 50px;
+	font-family: var(--paragraphe-font);
+	color: #afafaf;
+	max-width: 500px;
+	line-height: 1.7;
+	margin-bottom: 50px;
 }
 
 .imc-form {
-  display: flex;
-  gap: 20px;
+	display: flex;
+	gap: 20px;
 }
 
 .calculate-form {
-  width: 500px;
+	width: 500px;
 }
 
 .calculate-box {
-  border: 1px solid var(--green-color);
-  width: 100%;
-  border-radius: 20px;
+	border: 1px solid var(--green-color);
+	width: 100%;
+	border-radius: 20px;
 }
 
 .calculate-input {
-  width: 100%;
-  background: transparent;
-  padding: 20px 60px 20px 30px;
-  outline: none;
-  border: none;
-  color: #fafafa;
-  display: flex;
-  align-items: center;
+	width: 100%;
+	background: transparent;
+	padding: 20px 60px 20px 30px;
+	outline: none;
+	border: none;
+	color: #fafafa;
+	display: flex;
+	align-items: center;
 }
 
 form .main-btn {
-  margin-top: 1.5rem;
-  width: 100%;
+	margin-top: 1.5rem;
+	width: 100%;
 }
 
 .calculate-img {
-  width: 300px;
-  justify-self: center;
+	width: 300px;
+	justify-self: center;
 }
 
 /*=============== FIN CALCULE IMC IMANE ===============*/
 
 /* ===============DEBUT FORMULAIRE VALENTIN ============*/
 
-.formulaire{
-  display: flex;
+.formulaire {
+	display: flex;
 }
-.partie-1{
-  width: 40vw;
+.partie-1 {
+	width: 40vw;
 }
-.partie-1 img{
-  width: 300px;
-  justify-self: center;
-}
-
-.partie-2{
-  display: flex;
-  flex-direction: column;
-  width: 60vw;
-  align-items: center;
-  
+.partie-1 img {
+	width: 300px;
+	justify-self: center;
 }
 
-.partie-2 h3{
-  font-family: var(--h2-font);
-  padding-top: 40px;
-  padding-bottom: 20px;
-  font-size: 3.5rem;
-  text-align: center;
-  color: white;
+.partie-2 {
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
+	align-items: center;
+}
+
+.partie-2 h3 {
+	font-family: var(--h2-font);
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 3.5rem;
+	text-align: center;
+	color: white;
 }
 
 .contact-form {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 400px;
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 400px;
 }
 
 .contact-form input,
 .contact-form textarea {
-    background: transparent;
-    border: 1px solid #b1dc39;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
+	background: transparent;
+	border: 1px solid #b1dc39;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
 }
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: gray;}
+	color: gray;
+}
 .contact-form button {
-      background-color: #b1dc39;
-      color: black;
-      font-weight: bold;
-      font-size: 18px;
-      padding: 12px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-  }
-.contact-form button:hover{
-  color: white;
-  background-color: #1d2c1f;
-  box-shadow: 0 0 10px #afafaf;
+	background-color: #b1dc39;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 12px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
 }
-.partie-2 p{
-  font-family: var(--paragraphe-font);
-  color: var(--paragraphe-color);
-  font-size: 1.rem;
-  text-align: center;
-  width: 70%;
+.contact-form button:hover {
+	color: white;
+	background-color: #1d2c1f;
+	box-shadow: 0 0 10px #afafaf;
 }
-.formulaire a{
-  color: var(--green-color);
+.partie-2 p {
+	font-family: var(--paragraphe-font);
+	color: var(--paragraphe-color);
+	font-size: 1.rem;
+	text-align: center;
+	width: 70%;
+}
+.formulaire a {
+	color: var(--green-color);
 }
