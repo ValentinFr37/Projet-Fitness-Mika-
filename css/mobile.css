@@ -158,5 +158,16 @@ section.home {
   margin: auto;
 }
 
+.partie-1{
+  display: none;
+}
 
-
+.formulaire{
+  justify-content: center;
+}
+.partie-2 p{
+  width: 100%;
+}
+.contact-form{
+  width: 80vw;
+}
