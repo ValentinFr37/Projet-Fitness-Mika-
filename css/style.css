@@ -5,6 +5,7 @@
   --green-color: #b3d537;
   --darkGreen-color: #0d1715;
   --prog-color: #1c231e;
+  --paragraphe-color: #AFAFAF;
 
   /*========== Polices principales ==========*/
 
@@ -653,64 +654,3 @@ form .main-btn {
 }
 
 /*=============== FIN CALCULE IMC IMANE ===============*/
-
-footer {
-
-  background-color: #0D1715;
-  color: white;
-  text-align: center;
-  padding: 5px 0;
-  font-family: var(--paragraphe-font);
-  font-family: Arial, sans-serif;
-  max-height: 20px;
-}
-
-
-
-
-
-
-
-.subtitle {
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 10px 0;
-  margin-bottom: 30px;
-}
-
-.social-icons img {
-  width: 30px;
-  height: 30px;
-}
-
-.line-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 30px auto;
-  margin-bottom: 50px;
-  width: 100%;
-}
-
-.line {
-  height: 2px;
-  background-color: #B3D537;
-  flex-grow: 1;
-  margin: 0 10px;
-}
-
-.copyright {
-  font-size: 0.8em;
-  color: gray;
-  margin-bottom: 20px;
-}
