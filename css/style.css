@@ -42,6 +42,8 @@ a {
 
 header {
   display: flex;
+  position: fixed;
+  inset: 0;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
@@ -50,6 +52,7 @@ header {
       #0d1715 70%,
       rgba(179, 213, 55, 0.1) 100%);
   height: 80px;
+  z-index: 10;
 }
 
 .header-navbar {
@@ -139,7 +142,7 @@ nav a:hover {
 
 /*=============== HOME IMANE ===============*/
 section.home {
-  margin-top: 70px;
+  margin-top: 100px;
 
 
 }
@@ -148,6 +151,7 @@ section.home {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 100px;
 }
 
 .home-data {
@@ -157,6 +161,7 @@ section.home {
   justify-content: center;
   gap: 10px;
   padding-left: 50px;
+  margin-top: 100px;
 }
 
 .home-title {
@@ -182,7 +187,7 @@ section.home {
   color: #afafaf;
   max-width: 500px;
   line-height: 2.5;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .home-images {
@@ -538,20 +543,40 @@ section.home {
   margin-bottom: 24px;
 }
 
+
+.partner-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  max-width: 1300px; /* Limite à 1300px en desktop */
+  width: 100%;
+  margin: auto; /* Centre la div */
+  white-space: nowrap;
+}
+
 .partner {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+  gap: 20px;
+  animation: scroll 10s linear infinite;
+  width: 300px;
 }
 
 .partner img {
-  width: 200px;
+  height: 50px; /* Ajuste selon tes besoins */
+  object-fit: contain;
 }
 
-.partner .partner-img {
-  filter: brightness(0%) contrast(10%);
+/* Animation de défilement */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
+
+
 
 /*=============== DEBUT SECTION CHOOSE IMANE ===============*/
 
@@ -707,7 +732,7 @@ section.home {
   font-family: "Londrina Outline", sans-serif;
   color: white;
   font-size: 3rem;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.4rem;
   margin-bottom: 40px;
 }
 
@@ -723,6 +748,7 @@ section.home {
   max-width: 500px;
   line-height: 1.7;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .imc-form {
@@ -838,4 +864,28 @@ form .main-btn {
 }
 .formulaire a{
   color: var(--green-color);
+}
+
+
+/* scrollup IMANE */
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: #b3d537;
+  display: inline-flex;
+  padding: .35rem;
+  color: black;
+  font-size: 1.25rem;
+  z-index: 20;
+  transition: .3S;
+}
+
+.scrollup:hover {
+  transform: translateY(-.25rem);
+}
+
+.show-scroll {
+  bottom: 3rem;
 }

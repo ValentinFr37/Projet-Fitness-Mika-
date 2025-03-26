@@ -5,15 +5,20 @@ header {
   display: flex;
   flex-direction: row-reverse;
   position: relative;
+  position: fixed;
+  inset: 0;
 }
 
 .nav-toggle {
   font-size: 1.25rem;
   cursor: pointer;
   z-index: 7;
-  
 }
 
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+}
 
 .fa-xmark {
   display: block;
@@ -24,7 +29,7 @@ header {
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 30px;
   background-color: hsla(180, 12%, 8%, .8);
   backdrop-filter: blur(32px);
@@ -75,9 +80,9 @@ header {
   cursor: pointer;
 }
 
-.fa-xmark {
+/* .fa-xmark {
   display: none;
-}
+} */
 
 
 .nav-close {
@@ -87,9 +92,9 @@ header {
   z-index: 7;
 }
 
-.nav-close.active {
+/* .nav-close.active {
   display: none;
-}
+} */
 
 .show-menu {
   right: 0;
@@ -109,7 +114,7 @@ main {
 /* SECTION HOME IMANE */
 section.home {
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 150px;
 }
 .home-container {
   grid-template-columns: 1fr;
@@ -126,6 +131,7 @@ section.home {
   gap: 40px;
   padding: 0 20px;
   text-align: center;
+  margin-top: 0;
 }
 
 .home-img {
@@ -151,8 +157,7 @@ section.home {
 }
 
 .home-description {
-  max-width: 350px;
-  width: 90%;
+  width: 100%;
   order: 4;
   font-size: 1rem;
   margin-bottom: 0rem;
@@ -175,10 +180,43 @@ section.home {
   z-index: -1;
 }
 
+/* DEBUT CHOOSE IMANE */
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 580px;
+  margin: auto;
+  padding: 20px;
+}
+
+.choose-description {
+  max-width: 500px;
+  width: 100%;
+}
+
+.choose-data {
+  width: 100%;
+}
+
+.main-section-title {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.choose-title {
+
+}
+
+
+/* FIN CHOOSE IMANE */
+
 /* LES AVIS IMANE */
 
 .title-avis {
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 100%;
   margin: auto;
   padding: 20px;
@@ -199,6 +237,10 @@ section.home {
 
 .testimonial-date {
   margin-bottom: 10px;
+}
+
+.evalutaion-google p {
+  font-size: 1rem;
 }
 
 /* calculer IMC IMANE*/
@@ -226,7 +268,7 @@ section.home {
 }
 
 .calculate-description {
-  width: 85%;
+  width: 100%;
   margin: auto;
   line-height: 1.7;
   margin-bottom: 40px;
@@ -234,6 +276,7 @@ section.home {
 
 .imc-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -241,30 +284,20 @@ section.home {
 }
 
 .calculate-form {
-  width: 85%;
+  width: 100%;
   margin: auto;
 }
 
 
-
-.scrollup {
-  position: fixed;
-  right: 1rem;
-  bottom: -30%;
-  background-color: green;
-  display: inline-flex;
-  padding: .35rem;
-  color: black;
-  font-size: 1.25rem;
-  z-index: 20;
-  transition: .3S;
+.partner-container {
+  max-width: 400px; /* Limite la largeur à 400px */
+  padding: 0 10px;
 }
 
-.scrollup:hover {
-  transform: translateY(-.25rem);
-}
 
-.show-scroll {
-  bottom: 3rem;
-}
 
+/* CALCULE IMC */
+
+.calculate-img  {
+  max-width: 150px;
+}

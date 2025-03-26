@@ -47,11 +47,12 @@ showTestimonials();
 
 // Loader après 2 secondes
 setTimeout(function () {
-  document.getElementById("loadingScreen").style.display = "none"; // Masque la page de chargement
-  document.getElementById("mainContent").style.display = "block"; // Affiche le contenu principal
-}, 2000); // 3000ms = 3 secondes
+  document.getElementById("loadingScreen").style.display = "none"; 
+  document.getElementById("mainContent").style.display = "block"; 
+}, 2000); 
 
 
+// NAVBAR BURGER IMANE
 
 const navMenu = document.querySelector('.navbar'),
       navToggle = document.querySelector('.nav-toggle'),
@@ -62,18 +63,18 @@ const navMenu = document.querySelector('.navbar'),
 /*===== MENU SHOW =====*/
 if (navToggle) {
     navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu'); // Ouvre la navbar
-        burgerIcon.style.display = 'none'; // Cache le burger
-        closeIcon.style.display = 'block'; // Affiche la croix
+        navMenu.classList.add('show-menu'); 
+        burgerIcon.style.display = 'none'; 
+        closeIcon.style.display = 'block'; 
     });
 }
 
 /*===== MENU HIDE =====*/
 if (navClose) {
     navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu'); // Ferme la navbar
-        burgerIcon.style.display = 'block'; // Réaffiche le burger
-        closeIcon.style.display = 'none'; // Cache la croix
+        navMenu.classList.remove('show-menu'); 
+        burgerIcon.style.display = 'block'; 
+        closeIcon.style.display = 'none'; 
     });
 }
 
@@ -103,8 +104,22 @@ window.addEventListener('scroll', scrollActive)
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
-    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
 	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
 						: scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const partner = document.querySelector(".partner");
+  const images = [...partner.children];
+
+  images.forEach(img => {
+    const clone = img.cloneNode(true);
+    partner.appendChild(clone);
+  });
+
+  const container = document.querySelector(".partner-container");
+  container.style.overflowX = "hidden";
+  container.style.maxWidth = "90%"; // Ajuste la largeur max
+});

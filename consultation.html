@@ -27,34 +27,36 @@
       </head>
   <body>
     <header>
-      <div class="nav-toggle">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="nav-close">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
+      
+
       <div class="header-navbar">
         <div class="logo">
           <a href="index.html"
             ><img src="./assets/Logo Projet1.png" alt="logo"
           /></a>
         </div>
+        <div class="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <div class="navbar">
           <nav>
             <ul class="nav-links" id="navLinks">
-              <li><a href="index.html" class="nav-link">Accueil</a></li>
+              <li><a href="#home" class="nav-link active-link">Accueil</a></li>
               <li>
-                <a href="programme.html" class="nav-link">Découvrez le coach</a>
+                <a href="#bienvenueChezMicka" class="nav-link ">Découvrez le coach</a>
               </li>
-              <li><a href="programme.html" class="nav-link">Abonnements</a></li>
+              <li><a href="#abonnement" class="nav-link">Abonnements</a></li>
               <li><a href="tarifs.html" class="nav-link">Programmes</a></li>
-              <li><a href="contact.html" class="nav-link">Avis</a></li>
+              <li><a href="#testimonials" class="nav-link">Avis</a></li>
             </ul>
           </nav>
           <a href="./consultation.html" class="main-btn-header">
             <span>Consultation</span> <span>OFFERTE</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
+          <div class="nav-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
         </div>
       </div>
     </header>
@@ -92,10 +94,7 @@
             </div>
 
             <p class="calculate-description">
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page. avant impression. Le Lorem Ipsum
-              est le faux texte standard de l'imprimerie depuis les années 1500,
-              quand un imprim
+              L'IMC (Indice de Masse Corporelle) évalue la corpulence en fonction du poids et de la taille (IMC = poids / taille²). Il aide à détecter les risques liés au surpoids ou à la maigreur, mais ne distingue pas la masse grasse de la masse musculaire.
             </p>
 
             <form action="" class="calculate-form" id="calculate-form">
@@ -118,7 +117,7 @@
               </div>
 
               <button type="submit" class="button main-btn">
-                Calculate Now <i class="fa-solid fa-arrow-right"></i>
+                Calculer maintenant <i class="fa-solid fa-arrow-right"></i>
               </button>
             </form>
 
@@ -132,5 +131,6 @@
         </div>
       </section>
     </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>
