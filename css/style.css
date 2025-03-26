@@ -5,6 +5,7 @@
 	--green-color: #b3d537;
 	--darkGreen-color: #0d1715;
 	--prog-color: #1c231e;
+	--paragraphe-color: #afafaf;
 
 	/*========== Polices principales ==========*/
 
@@ -474,7 +475,7 @@ main {
 	font-family: var(--h2-font);
 	margin-top: 15px;
 	font-size: 28px;
-	color: white;
+	color: var(--green-color);
 }
 #program-listing {
 	display: flex;
@@ -484,17 +485,25 @@ main {
 	max-width: 1200px;
 	margin: auto;
 }
-#musculation,
-#cardio-training,
-#crossfit,
-#HIT {
+.tickets {
 	background-color: var(--prog-color);
 	width: 17%;
 	max-width: 350px;
 	height: auto;
 	border-radius: 8%;
 	padding: 20px;
+	font-family: var(--paragraphe-font);
+	transition: transform 0.3s ease-in-out;
 }
+
+.tickets:hover {
+	color: white;
+	background-color: #1d2c1f;
+	box-shadow: 0 0 10px #afafaf;
+	transform: scale(1.1);
+	transition: transform 0.3s ease-in-out;
+}
+
 .training-header img {
 	margin-top: 10px;
 	width: 50px;
@@ -503,6 +512,11 @@ main {
 .trainings p {
 	padding: 10px;
 	font-size: 1.2rem;
+	font-family: var(--paragraphe-font);
+	color: #afafaf;
+	max-width: 500px;
+	line-height: 2.5;
+	margin-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -717,3 +731,80 @@ form .main-btn {
 }
 
 /*=============== FIN CALCULE IMC IMANE ===============*/
+
+/* ===============DEBUT FORMULAIRE VALENTIN ============*/
+
+.formulaire {
+	display: flex;
+}
+.partie-1 {
+	width: 40vw;
+}
+.partie-1 img {
+	width: 300px;
+	justify-self: center;
+}
+
+.partie-2 {
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
+	align-items: center;
+}
+
+.partie-2 h3 {
+	font-family: var(--h2-font);
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 3.5rem;
+	text-align: center;
+	color: white;
+}
+
+.contact-form {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+	background: transparent;
+	border: 1px solid #b1dc39;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+	color: gray;
+}
+.contact-form button {
+	background-color: #b1dc39;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 12px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.contact-form button:hover {
+	color: white;
+	background-color: #1d2c1f;
+	box-shadow: 0 0 10px #afafaf;
+}
+.partie-2 p {
+	font-family: var(--paragraphe-font);
+	color: var(--paragraphe-color);
+	font-size: 1.rem;
+	text-align: center;
+	width: 70%;
+}
+.formulaire a {
+	color: var(--green-color);
+}
