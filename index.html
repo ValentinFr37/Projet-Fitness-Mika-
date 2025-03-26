@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/loader.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css" only media="screen and (max-width: 768px)" />
+
 </head>
 
 <body>
@@ -25,10 +26,6 @@
         <h2>Entraînement en cours...</h2>
         <p>Préparez-vous à performer avec Mika !</p>
     </div>
-
-    <!--==================== HEADER ====================-->
-
-    <!--==================== HEADER / NAV TOM SECTION ====================-->
 
     <header>
         <!-- Toggle button -->
@@ -94,8 +91,37 @@
 
         <!--==================== FIN HOME IMANE ====================-->
 
+        <!--==================== CYNTHIA: DEBUT ====================-->
 
-        <!-- Valentin Début -->
+        <section id="bienvenueChezMicka">
+
+            <article id="illustration">
+                <img src="polygonSection2.png" alt="photo1" class="photo1">
+                <img src="assets/choose-img.png" alt="photo2" class="photo2">
+
+            </article>
+
+            <article id="descriptionbio">
+                <h2 id="Bienvenue">Bienvenue Chez Micka</h2>
+
+                <h3 id="commando">Le Coaching Commando</h3>
+
+                <p id="bio">Ancien militaire, j’ai gardé la discipline, l’endurance et le goût du défi. Mon objectif ?
+                    Vous aider
+                    à
+                    repousser vos limites, sans excuses, mais toujours avec bonne humeur. Avec moi, chaque séance est un
+                    challenge : on bouge, on progresse et on se dépasse ! 💪🔥</p>
+
+                <button class="a-propos">A propos</button>
+
+            </article>
+
+        </section>
+
+        <!--==================== CYNTHIA: FIN ====================-->
+
+
+        <!--==================== Valentin Début ====================-->
         <section class="abonnement">
             <h2 class="main-section-title main-section-title title-avis">Nos abonnements</h2>
             <div id="container">
@@ -106,10 +132,15 @@
                         <p class="prix">30€</p>
                     </div>
                     <ul class=" checklist">
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i> 5 jours par semaine</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i> 5 jours par semaine</li>
-                        <li class="invalid">✖ 5 jours par semaine</li>
-                        <li class="invalid">✖ 5 jours par semaine</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(2
+                            jours/semaine)</li>
+                        <li class="invalid">
+                            <p>✖</p> Accès aux cours collectifs
+                        </li>
+                        <li class="invalid">
+                            <p>✖</p> Programme nutrition
+                        </li>
                     </ul>
                     <button class="btn">Réserver →</button>
                 </div>
@@ -121,13 +152,15 @@
                         <p class="prix">50€</p>
                     </div>
                     <ul class="checklist">
-                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i> 5 jours par
-                            semaine</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i> 5 jours par
-                            semaine</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e"></i> 5 jours par
-                            semaine</li>
-                        <li class="invalid">✖ 5 jours par semaine</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Accès à la
+                            salle de sport</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Coaching
+                            personnalisé <br>(3 jours/semaine)</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e"></i>Accès aux cours
+                            collectifs</li>
+                        <li class="invalid">
+                            <p>✖</p> Programme nutrition
+                        </li>
                     </ul>
                     <button id="btnV">Réserver →</button>
                 </div>
@@ -139,17 +172,21 @@
                         <p class="prix">100€</p>
                     </div>
                     <ul class="checklist">
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i> 5 jours par semaine</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i> 5 jours par semaine</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i> 5 jours par semaine</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i> 5 jours par semaine</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(5
+                            jours/semaine)</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Accès aux cours collectifs</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Programme nutrition</li>
                     </ul>
                     <button class="btn">Réserver →</button>
                 </div>
             </div>
         </section>
-        <!-- Valentin Fin -->
 
+        <section class="abonnement-mobile">
+
+        </section>
+        <!--==================== Valentin Fin ====================-->
 
 
         <!--==================== DEBUT AVIS IMANE ====================-->
@@ -278,31 +315,27 @@
     </main>
     <script src="./js/script.js"></script>
     <script src="./js/gsap.js"></script>
+    <footer>
+        <div class="footer-container">
+            <img src="assets/Logo Projet1.png" alt="Mika Fitness Logo" class="logo">
+            <p class="subtitle">Coaching Commando</p>
+            <h2>Rejoignez-nous</h2>
+            <div class="separator"></div>
+            <div class="social-icons">
+                <a href="#"><img src="assets/facebook-logo-facebook-icon-transparent-free-png.webp" alt="Facebook"></a>
+                <a href="#"><img src="assets/instagram-logo-instagram-icon-transparent-free-png.webp"
+                        alt="Instagram"></a>
+                <a href="#"><img src="assets/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn"></a>
+                <a href="#"><img
+                        src="assets/sankt-petersburg-russia-24-08-2023-twitter-new-logo-twitter-icons-twitter-x-logo-free-png.webp"
+                        alt="Twitter"></a>
+            </div>
+            <p class="copyright">&copy; 2025 Wilders</p>
+        </div>
+    </footer>
+
+
 </body>
 
-<!--==================== FOOTER ====================-->
-
-<!--==================== FOOTER TOM SECTION ====================-->
-
-<footer>
-    <div class="footer-content">
-        <img src="Logo Projet1.png" alt="Mika Fitness Logo" class="logo">
-        <p class="subtitle">Coaching Commando</p>
-        <h3>Rejoignez-nous</h3>
-        <div class="social-icons">
-            <a href="#"><img src="assets/facebook-logo-facebook-icon-transparent-free-png.webp" alt="Facebook"></a>
-            <a href="#"><img src="assets/instagram-logo-instagram-icon-transparent-free-png.webp" alt="Instagram"></a>
-            <a href="#"><img src="assets/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn"></a>
-            <a href="#"><img
-                    src="assets/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x-social-media-icon-free-png.webp"
-                    alt="Twitter"></a>
-        </div>
-        <div class="line-container">
-            <span class="line"></span>
-            <span class="line"></span>
-        </div>
-        <p class="copyright">© 2025 Wilders</p>
-    </div>
-</footer>
 
 </html>
