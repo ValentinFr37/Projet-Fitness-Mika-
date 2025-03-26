@@ -5,7 +5,7 @@
   --green-color: #b3d537;
   --darkGreen-color: #0d1715;
   --prog-color: #1c231e;
-  --paragraphe-color: #AFAFAF;
+  --paragraphe-color: #afafaf;
 
   /*========== Polices principales ==========*/
 
@@ -38,7 +38,6 @@ a {
 .fa-xmark {
   display: none;
 }
-
 
 header {
   display: flex;
@@ -128,8 +127,6 @@ nav a:hover {
 /*=============== HOME IMANE ===============*/
 section.home {
   margin-top: 70px;
-
-
 }
 
 .home-container {
@@ -229,19 +226,15 @@ section.home {
 
 /*==================== CYNTHIA DEBUT====================*/
 
-
-
 body {
   background-color: var(--darkGreen-color);
 }
 
 main {
-
   max-width: 1200px;
   width: 100%;
   margin: auto;
 }
-
 
 /* titre section 2 */
 #bienvenueChezMicka {
@@ -250,7 +243,6 @@ main {
   display: flex;
   justify-content: space-between;
 }
-
 
 /*premier article à gauche : photo de Micka*/
 
@@ -264,7 +256,6 @@ main {
   width: 81%;
   /* height: 300px; */
 }
-
 
 .photo2 {
   width: 81%;
@@ -280,7 +271,6 @@ main {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-
 }
 
 #Bienvenue {
@@ -312,8 +302,6 @@ main {
 }
 
 /* ====================CYNTHIA FIN====================*/
-
-
 
 /* ====================ABONNEMENT VALENTIN ====================*/
 
@@ -468,9 +456,87 @@ main {
   }
 }
 
-
 /*==================== Valentin fin==================== */
 
+/*==================== PROGRAMME CYNTHIA: DEBUT ====================*/
+.trainings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.trainings h3 {
+  font-family: var(--h2-font);
+  margin-top: 15px;
+  font-size: 28px;
+  color: var(--green-color);
+}
+
+#program-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tickets {
+  background-color: var(--prog-color);
+  width: 17%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8%;
+  padding: 20px;
+  font-family: var(--paragraphe-font);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tickets:hover {
+  color: white;
+  background-color: #1d2c1f;
+  box-shadow: 0 0 10px #afafaf;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.training-header img {
+  margin-top: 10px;
+  width: 50px;
+  margin-bottom: auto;
+}
+
+.trainings p {
+  padding: 10px;
+  font-size: 1rem;
+  font-family: var(--paragraphe-font);
+  color: #afafaf;
+  max-width: 500px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 768px) {
+  #program-listing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #musculation,
+  #cardio-training,
+  #crossfit,
+  #HIT {
+    width: 90%;
+    max-width: 100%;
+    padding: 15px;
+  }
+}
+
+/*==================== PROGRAMME CYNTHIA: FIN ====================*/
 
 /* ====================SECTION AVIS IMANE  ====================*/
 .testimonials {
@@ -751,57 +817,4 @@ form .main-btn {
 
 .formulaire a {
   color: var(--green-color);
-}
-
-footer {
-  background-color: #0D1715;
-  padding: 40px 20px;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  width: 200px;
-  margin-bottom: 15px;
-}
-
-.subtitle {
-  font-weight: bold;
-}
-
-h2 {
-  color: white;
-}
-
-.separator {
-  width: 600px;
-  height: 2px;
-  background-color: #B3D537;
-  margin: 10px 0;
-}
-
-.subtitle {
-  color: white;
-  font-weight: bold;
-}
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-  margin: 10px 0;
-}
-
-.social-icons img {
-  width: 30px;
-  height: 30px;
-}
-
-.copyright {
-  margin-top: 15px;
-  font-size: 12px;
-  opacity: 0.7;
 }
