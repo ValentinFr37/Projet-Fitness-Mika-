@@ -26,44 +26,41 @@
         />
       </head>
   <body>
-      <header>
+    <header>
+      
+
+      <div class="header-navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="./assets/Logo Projet1.png" alt="logo"
+          /></a>
+        </div>
         <div class="nav-toggle">
           <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="nav-close">
-        <i class="fa-solid fa-xmark"></i>
-    </div>
-
-          <div class="logo">
-              <a href="index.html"><img src="./assets/Logo Projet1.png" alt="logo"></a>
-          </div>
-      
-      
-          <div class="navbar">
-    
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="programme.html">Découvrez le coach</a></li>
-                    <li><a href="programme.html">Abonnements</a></li>
-                    <li><a href="tarifs.html">Programmes</a></li>
-                    <li><a href="contact.html">Avis</a></li>
-                </ul>
-            </nav>
-    
-            <a href="./consultation.html" class="main-btn-header">
-              <span>Consultation</span> <span>OFFERTE</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          <!-- Toggle button -->
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-line"></i>
         </div>
-      
-      </header>
+        <div class="navbar">
+          <nav>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="#home" class="nav-link active-link">Accueil</a></li>
+              <li>
+                <a href="#bienvenueChezMicka" class="nav-link ">Découvrez le coach</a>
+              </li>
+              <li><a href="#abonnement" class="nav-link">Abonnements</a></li>
+              <li><a href="tarifs.html" class="nav-link">Programmes</a></li>
+              <li><a href="#testimonials" class="nav-link">Avis</a></li>
+            </ul>
+          </nav>
+          <a href="./consultation.html" class="main-btn-header">
+            <span>Consultation</span> <span>OFFERTE</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <div class="nav-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+    </header>
 
-
-      
     <main>
       
         <section class="formulaire hidden">
@@ -91,38 +88,36 @@
         <div class="calculate-container container">
           <div class="calculate-content">
             <div class="section-titles">
-              <h1 class="section-title-border">CALCULER <span>VOTRE IMC</span></h1>
+              <h1 class="section-title-border">
+                CALCULER <span>VOTRE IMC</span>
+              </h1>
             </div>
 
             <p class="calculate-description">
-                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page. avant impression. Le Lorem Ipsum est le faux texte standard de  l'imprimerie depuis les années 1500, quand un imprim
+              L'IMC (Indice de Masse Corporelle) évalue la corpulence en fonction du poids et de la taille (IMC = poids / taille²). Il aide à détecter les risques liés au surpoids ou à la maigreur, mais ne distingue pas la masse grasse de la masse musculaire.
             </p>
 
             <form action="" class="calculate-form" id="calculate-form">
               <div class="imc-form">
-                  <div class="calculate-box">
-                    <input
-                   
-                      placeholder="Taille"
-                      class="calculate-input cm"
-                      id="calculate-cm"
-                    />
-                    <div class="cm"></div>
-                    
-                  </div>
-                  <div class="calculate-box">
-                    <input
-                     
-                      placeholder="Poid"
-                      class="calculate-input kg"
-                      id="calculate-kg"
-                    />
-                   
-                  </div>
+                <div class="calculate-box">
+                  <input
+                    placeholder="Taille"
+                    class="calculate-input cm"
+                    id="calculate-cm"
+                  />
+                  <div class="cm"></div>
+                </div>
+                <div class="calculate-box">
+                  <input
+                    placeholder="Poid"
+                    class="calculate-input kg"
+                    id="calculate-kg"
+                  />
+                </div>
               </div>
 
-              <button type="submit" class="button main-btn">
-                Calculate Now <i class="fa-solid fa-arrow-right"></i>
+              <button type="submit" class="button main-btn calcule-imc-btn">
+                Calculer maintenant <i class="fa-solid fa-arrow-right"></i>
               </button>
             </form>
 
@@ -140,6 +135,7 @@
     
     
     </main>
+    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </body>
 </html>

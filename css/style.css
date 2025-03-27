@@ -24,8 +24,9 @@ body {
 }
 
 main {
-	max-width: 1200px;
-	margin: auto;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
 }
 
 a {
@@ -40,18 +41,31 @@ a {
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 0;
-	background: linear-gradient(
-		180deg,
-		#1c231e 0%,
-		#0d1715 70%,
-		rgba(179, 213, 55, 0.1) 100%
-	);
-	height: 80px;
+  display: flex;
+  position: fixed;
+  inset: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background: linear-gradient(180deg,
+      #1c231e 0%,
+      #0d1715 70%,
+      rgba(179, 213, 55, 0.1) 100%);
+  height: 80px;
+  z-index: 10;
+  width: 100%;
 }
+
+.header-navbar {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+
 
 .logo {
 	display: flex;
@@ -128,22 +142,26 @@ nav a:hover {
 
 /*=============== HOME IMANE ===============*/
 section.home {
-	margin-top: 70px;
+  margin-top: 100px;
+  width: 100%;
+
+
 }
 
 .home-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
 }
 
 .home-data {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	gap: 10px;
-	padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 100px;
 }
 
 .home-title {
@@ -165,11 +183,11 @@ section.home {
 }
 
 .home-description {
-	font-family: var(--paragraphe-font);
-	color: #afafaf;
-	max-width: 500px;
-	line-height: 2.5;
-	margin-bottom: 50px;
+  font-family: var(--paragraphe-font);
+  color: #afafaf;
+  max-width: 500px;
+  line-height: 2.5;
+  margin-bottom: 30px;
 }
 
 .home-images {
@@ -228,22 +246,13 @@ section.home {
 
 /*==================== CYNTHIA DEBUT====================*/
 
-body {
-	background-color: var(--darkGreen-color);
-}
-
-main {
-	max-width: 1200px;
-	width: 100%;
-	margin: auto;
-}
-
 /* titre section 2 */
 #bienvenueChezMicka {
 	color: white;
 	height: 100vh;
 	display: flex;
 	justify-content: space-between;
+	
 }
 
 /*premier article à gauche : photo de Micka*/
@@ -275,12 +284,6 @@ main {
 	justify-content: space-evenly;
 	align-items: center;
 	text-align: center;
-	/*display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	gap: 10px;
-	padding-left: 50px;*/
 }
 
 #Bienvenue {
@@ -326,6 +329,8 @@ main {
 }
 
 /* ====================CYNTHIA FIN====================*/
+
+/* ====================ABONNEMENT VALENTIN ====================*/
 
 /* ====================ABONNEMENT VALENTIN ====================*/
 
@@ -401,6 +406,7 @@ main {
 .prix {
 	font-size: 2rem;
 	margin: 20px 0;
+	font-family: "Academy Engraved LET", sans-serif;
 }
 
 .abonnement li {
@@ -457,28 +463,17 @@ main {
 	margin-right: 15px;
 }
 
-@media screen and (max-width: 768px) {
-	#container {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.program,
-	.program-vert {
-		width: 90%;
-		max-width: 100%;
-		padding: 15px;
-	}
-
-	.btn,
-	#btnV {
-		width: 100%;
-	}
-
-	.checklist li {
-		font-size: 1rem;
-	}
+.fa-circle-check {
+	color: var(--green-color);
+	margin-right: 15px;
 }
+
+.fa-circle-xmark {
+  margin-right: 10px;
+}
+
+
+
 
 /*==================== Valentin fin==================== */
 
@@ -522,7 +517,7 @@ main {
 	color: white;
 	background-color: #1d2c1f;
 	box-shadow: 0 0 10px #afafaf;
-	transform: scale(1.1);
+	transform: scale(1.1) !important;
 	transition: transform 0.3s ease-in-out;
 }
 
@@ -540,29 +535,123 @@ main {
 	line-height: 2;
 }
 
-@media screen and (max-width: 768px) {
-	#program-listing {
-		flex-direction: column;
-		align-items: center;
-	}
 
-	#musculation,
-	#cardio-training,
-	#crossfit,
-	#HIT {
-		width: 90%;
-		max-width: 100%;
-		padding: 15px;
-	}
-}
+
 /*==================== PROGRAMME CYNTHIA: FIN ====================*/
 
-/* ====================SECTION AVIS IMANE  ====================*/
+/*==================== CHOOSE COACHING MICKA IMANE: DEBUT ====================*/
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.choose-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+
+.choose-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: var(--paragraphe-font);
+  color: #afafaf;
+  width: 50%;
+  margin: auto;
+  line-height: 2.5;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.choose-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.choose-group {
+  font-size: 1.5rem;
+}
+
+.stats-members {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.stats-best-trainers {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.choose-number {
+  font-size: 3.5rem;
+  font-family: "Amita", cursive;
+  color: var(--green-color);
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.choose-subtitle {
+  font-size: var(--paragraphe-font);
+  color: #fafafa;
+  font-size: 1rem;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+
+.partner-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  max-width: 1300px; /* Limite à 1300px en desktop */
+  width: 100%;
+  margin: auto; /* Centre la div */
+  white-space: nowrap;
+}
+
+.partner {
+  display: flex;
+  gap: 20px;
+  animation: scroll 10s linear infinite;
+  width: 300px;
+}
+
+.partner img {
+  height: 50px; /* Ajuste selon tes besoins */
+  object-fit: contain;
+}
+
+/* Animation de défilement */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*==================== CHOOSE COACHING MICKA IMANE: DEBUT ====================*/
+
+
+/*=============== DEBUT SECTION AVIS IMANE ===============*/
 .testimonials {
-	text-align: center;
-	padding: 50px 20px;
-	background-color: var(--darkGreen-color);
-	margin-top: 100px;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: var(--darkGreen-color);
 }
 
 /* Carrousel */
@@ -575,10 +664,10 @@ main {
 
 /* Conteneur des avis */
 .carousel-container {
-	display: flex;
-	gap: 20px;
-	width: 100%;
-	transition: transform 0.3s ease-in-out;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel-track {
@@ -588,16 +677,17 @@ main {
 }
 
 .testimonial {
-	flex: 0 0 calc(33% - 20px);
-	background: var(--prog-color);
-	padding: 20px 0;
-	border-radius: 10px;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-	min-height: 200px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+  flex: 0 0 calc(33% - 20px);
+  background: var(--prog-color);
+  padding: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 /* En-tête de l'avis */
@@ -609,34 +699,41 @@ main {
 }
 
 .testimonial-name {
-	font-family: var(--paragraphe-font);
-	color: #ffffff;
-	font-size: 1rem;
+  font-family: var(--paragraphe-font);
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
-.testimonial-name::after {
-	content: "";
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background-image: url("./../assets/Google.png");
-	background-size: contain;
-	margin-left: 20px;
+.testimonial::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  background-image: url("./../assets/Google.png");
+  background-size: contain;
+  margin-left: 10px;
 }
 
 /* Date */
 .testimonial-date {
-	font-size: 0.8rem;
-	color: gray;
-	font-family: var(--paragraphe-font);
+  font-size: 0.8rem;
+  color: gray;
+  font-family: var(--paragraphe-font);
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 /* Étoiles */
 .testimonial-star i {
-	color: transparent;
-	background: linear-gradient(60deg, #f39c12, #f1c40f, #ffffff, #ffffff);
-	background-clip: text;
-	font-size: 1.2rem;
+  color: transparent;
+  background: linear-gradient(60deg, #f39c12, #f1c40f, #ffffff, #ffffff);
+  background-clip: text;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 /* Texte de l'avis */
@@ -653,26 +750,30 @@ main {
 }
 
 /* Boutons de navigation */
-.carousel-btn {
-	background: none;
-	border: none;
-	font-size: 2rem;
-	cursor: pointer;
-	padding: 10px;
-	color: #fafafa;
-	transition: 0.3s;
+.carousel-btn-avis {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  color: #fafafa;
+  transition: 0.3s;
+  z-index: 1;
 }
 
-.carousel-btn:hover {
+.carousel-btn-avis:hover {
 	color: var(--green-color, #28a745);
 }
 
 .evalutaion-google p {
-	color: var(--green-color);
-	font-size: 1.8rem;
-	margin-top: 30px;
-	font-family: var(--paragraphe-font);
+  color: var(--green-color);
+  font-size: 1.8rem;
+  margin: auto;
+  margin-top: 30px;
+  font-family: var(--paragraphe-font);
 }
+
+/*=============== FIN SECTION AVIS IMANE ===============*/
 
 /*=============== CALCULE IMC IMANE ===============*/
 
@@ -684,9 +785,9 @@ main {
 }
 
 .calculate-content {
-	width: 70%;
+	width: 100%;
 	margin: auto;
-	padding: 0 40px;
+	/* padding: 0 40px; */
 }
 
 .calculate-content .section-titles {
@@ -694,11 +795,11 @@ main {
 }
 
 .section-title-border {
-	font-family: "Londrina Outline", sans-serif;
-	color: white;
-	font-size: 3rem;
-	letter-spacing: 0.6rem;
-	margin-bottom: 40px;
+  font-family: "Londrina Outline", sans-serif;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  margin-bottom: 40px;
 }
 
 .section-title-border span {
@@ -708,11 +809,12 @@ main {
 }
 
 .calculate-description {
-	font-family: var(--paragraphe-font);
-	color: #afafaf;
-	max-width: 500px;
-	line-height: 1.7;
-	margin-bottom: 50px;
+  font-family: var(--paragraphe-font);
+  color: #afafaf;
+  max-width: 500px;
+  line-height: 1.7;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .imc-form {
@@ -727,7 +829,7 @@ main {
 .calculate-box {
 	border: 1px solid var(--green-color);
 	width: 100%;
-	border-radius: 20px;
+	border-radius: 5px;
 }
 
 .calculate-input {
@@ -739,6 +841,10 @@ main {
 	color: #fafafa;
 	display: flex;
 	align-items: center;
+}
+
+.calcule-imc-btn {
+  border-radius: 5px;
 }
 
 form .main-btn {
@@ -831,6 +937,30 @@ form .main-btn {
   color: var(--green-color);
 }
 
+/* ===============FIN FORMULAIRE VALENTIN ============*/
+
+/* scrollup IMANE */
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: #b3d537;
+  display: inline-flex;
+  padding: .35rem;
+  color: black;
+  font-size: 1.25rem;
+  z-index: 20;
+  transition: .3S;
+}
+
+.scrollup:hover {
+  transform: translateY(-.25rem);
+}
+
+.show-scroll {
+  bottom: 3rem;
+}
 .hidden {
     opacity: 0;
     transform: translateY(30px);
