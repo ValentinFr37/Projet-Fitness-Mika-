@@ -93,7 +93,7 @@ header {
 }
 
 .active-link {
-  color: green;
+  color: var(--green-color);
 }
 
 /* FIN HEADER BURGER */
@@ -204,68 +204,26 @@ section.home {
 /* DEBUT ABONNEMENT VALENTIN */
 
 #container {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-  justify-content: center;
-  position: relative;
-  height: auto;
+  flex-direction: column;
+  align-items: center;
 }
 
 .program,
 .program-vert {
-  min-width: 75%; /* Chaque abonnement prend toute la largeur */
-  display: none; /* Cacher tous les abonnements par défaut */
-  transition: opacity 0.5s ease-in-out;
-  padding: 20px 0;
+  width: 90%;
+  max-width: 100%;
+  padding: 15px;
 }
 
-.program-header h3 {
-  font-size: 1.4rem;
-}
-
-/* Afficher uniquement l'abonnement actif */
-.program.active,
-.program-vert.active {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-}
-
-/* Boutons de navigation */
-.carousel-controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 20px;
-}
-
-.carousel-btn {
-  display: block;
-  background-color: var(--green-color);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-.carousel-btn:hover {
-  background-color: var(--prog-color);
+.btn,
+#btnV {
+  width: 100%;
 }
 
 .checklist li {
-  font-size: .9rem;
+  font-size: 1rem;
 }
-
-.checklist li span {
-  font-size: .5rem;
-}
-/* DEBUT ABONNEMENT VALENTIN */
+/* FIN ABONNEMENT VALENTIN */
 
 /* DEBUT SECTION PROGRAM  */
 .trainings {
@@ -274,6 +232,22 @@ section.home {
 
 .trainings h3 {
   font-size: 1.4rem;
+}
+
+.tickets:hover {
+	color: black;
+	background-color: var(--green-color);
+	box-shadow: 0 0 10px #afafaf;
+	transform: scale(1.1);
+	transition: transform 0.3s ease-in-out;
+}
+
+.tickets:hover h3 {
+  color: black; /* Titre en noir */
+}
+
+.tickets:hover .explanation {
+  color: black; /* Texte explicatif en noir */
 }
 
 #program-listing {

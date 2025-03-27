@@ -133,59 +133,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // FIN DEFILEMENT PARTNER IMANE //
 
-// DEBUT CAROUSSEL ABONNEMENT IMANE //
-
-document.addEventListener("DOMContentLoaded", function () {
-  const programs = document.querySelectorAll(".program, .program-vert");
-  const prevBtn = document.getElementById("prev");
-  const nextBtn = document.getElementById("next");
-
-  let index = 1; // Commencer avec l'abonnement du milieu
-
-  function updateCarousel() {
-      // Cacher tous les abonnements
-      programs.forEach(program => program.classList.remove("active"));
-
-      // Afficher uniquement celui sélectionné
-      programs[index].classList.add("active");
-  }
-
-  prevBtn.addEventListener("click", function () {
-      if (index > 0) {
-          index--;
-      } else {
-          index = programs.length - 1; // Revenir au dernier abonnement si on est au premier
-      }
-      updateCarousel();
-  });
-
-  nextBtn.addEventListener("click", function () {
-      if (index < programs.length - 1) {
-          index++;
-      } else {
-          index = 0; // Revenir au premier abonnement si on est au dernier
-      }
-      updateCarousel();
-  });
-
-  // Initialisation
-  updateCarousel();
-});
-// FIN CAROUSSEL ABONNEMENT IMANE //
-
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
-  origin: 'top',
-  distance: '60px',
-  duration: 2500,
-  delay: 400,
+  origin: 'bottom',   
+  distance: '50px',   
+  duration: 1000,     
+  delay: 300,         
+  easing: 'ease-in-out'
 })
 
 sr.reveal(`.home-data`, {delay: 1000, origin: 'left'})
-// sr.reveal(`.home-img`, {delay: 70, origin: 'right', distance: '80px'})
-sr.reveal(`.bienvenueChezMicka, .program, .tickets, .choose`, {interval: 100})
+sr.reveal(`.bienvenueChezMicka, .program, .choose`, {interval: 100})
 // sr.reveal(`.photo2`, {delay: 100, origin: 'letf'})
 sr.reveal(`.descriptionbio`, {delay: 1000, origin: 'right'})
 sr.reveal(`.choose-description`, {delay: 1000, origin: 'top'})
 sr.reveal(`.choose-data`, {delay: 1000, origin: 'bottom'})
-sr.reveal(`.partner-container`, {delay: 800, origin: 'bottom'})
+// sr.reveal(`.partner-container`, {delay: 100, origin: 'bottom'})
+
+
+sr.reveal('.tickets', { 
+  interval: 200,
+  beforeReveal: function (el) {
+    el.style.transition = "transform 0.3s ease-in-out"; 
+  }
+});

@@ -315,8 +315,8 @@ section.home {
 	color: var(--darkGreen-color);
 	font-size: 1rem;
 	border-radius: 20px;
-	width: 60%;
-	padding: 10px 36px;
+	width: 24vw;
+	padding: 18px 36px;
 	font-weight: bold;
 	letter-spacing: 1px;
 	border: 2px solid #b3d537;
@@ -329,6 +329,8 @@ section.home {
 }
 
 /* ====================CYNTHIA FIN====================*/
+
+/* ====================ABONNEMENT VALENTIN ====================*/
 
 /* ====================ABONNEMENT VALENTIN ====================*/
 
@@ -363,9 +365,9 @@ section.home {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	gap: 15px;
+	gap: 20px;
+	max-width: 1200px;
 	margin: auto;
-  width: 100%;
 }
 
 .program,
@@ -397,11 +399,6 @@ section.home {
 	color: white;
 }
 
-.valid span {
-  margin-left: 5px;
-  font-size: .6rem;
-}
-
 .program-vert .valid {
 	color: black;
 }
@@ -409,7 +406,7 @@ section.home {
 .prix {
 	font-size: 2rem;
 	margin: 20px 0;
-  font-family: "Academy Engraved LET", sans-serif;
+	font-family: "Academy Engraved LET", sans-serif;
 }
 
 .abonnement li {
@@ -431,12 +428,11 @@ section.home {
 	transition: transform 0.3s ease;
 	cursor: pointer;
 	text-align: center;
-  width: 80%;
 }
 
 .btn:hover,
 #btnV:hover {
-	transform: scale(1.05);
+	transform: scale(1.1);
 }
 
 #btnV {
@@ -455,7 +451,16 @@ section.home {
 	display: flex;
 	align-items: center;
 	padding: 8px 0;
-	font-size: 1rem;
+	font-size: 1.2rem;
+}
+
+.fa-circle-check {
+	color: var(--green-color);
+	margin-right: 15px;
+}
+
+.invalid p {
+	margin-right: 15px;
 }
 
 .fa-circle-check {
@@ -468,13 +473,7 @@ section.home {
 }
 
 
-.invalid p {
-	margin-right: 15px;
-}
 
-.carousel-btn {
-  display: none;
-}
 
 /*==================== Valentin fin==================== */
 
@@ -502,7 +501,6 @@ section.home {
 	gap: 20px;
 	max-width: 1200px;
 	margin: auto;
-
 }
 .tickets {
 	background-color: var(--prog-color);
@@ -513,23 +511,14 @@ section.home {
 	padding: 20px;
 	font-family: var(--paragraphe-font);
 	transition: transform 0.3s ease-in-out;
-  color: white;
 }
 
 .tickets:hover {
-	color: black;
-	background-color: var(--green-color);
+	color: white;
+	background-color: #1d2c1f;
 	box-shadow: 0 0 10px #afafaf;
-	transform: scale(1.02);
+	transform: scale(1.1) !important;
 	transition: transform 0.3s ease-in-out;
-}
-
-.tickets:hover h3 {
-  color: black; /* Titre en noir */
-}
-
-.tickets:hover .explanation {
-  color: black; /* Texte explicatif en noir */
 }
 
 .training-header img {
@@ -538,13 +527,15 @@ section.home {
 	margin-bottom: auto;
 }
 .trainings p {
-	padding: 10px 0;
+	padding: 10px;
 	font-size: 1rem;
 	font-family: var(--paragraphe-font);
 	color: #afafaf;
-	max-width: 100%;
+	max-width: 500px;
 	line-height: 2;
 }
+
+
 
 /*==================== PROGRAMME CYNTHIA: FIN ====================*/
 

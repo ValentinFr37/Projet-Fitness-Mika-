@@ -28,7 +28,7 @@
     <div class="loading-container" id="loadingScreen">
       <div class="loader"></div>
       <h2>Entraînement en cours...</h2>
-      <p>Préparez-vous à performer avec Mika !</p>
+      <p>Prépare-toi à performer avec Mika !</p>
     </div>
 
     <header>
@@ -52,7 +52,7 @@
                 <a href="#bienvenueChezMicka" class="nav-link ">Découvrez le coach</a>
               </li>
               <li><a href="#abonnement" class="nav-link">Abonnements</a></li>
-              <li><a href="tarifs.html" class="nav-link">Programmes</a></li>
+              <li><a href="#trainings" class="nav-link">Programmes</a></li>
               <li><a href="#testimonials" class="nav-link">Avis</a></li>
             </ul>
           </nav>
@@ -129,62 +129,59 @@
 
 
         <!--==================== Valentin Début ====================-->
+ <!--==================== Valentin Début ====================-->
+ <section class="abonnement" id="abonnement">
+  <h2 class="main-section-title main-section-title title-avis">Mes formules !</h2>
+  <div id="container">
+      <div class="program"> <!--subscription? plan?-->
+          <div class="program-header">
+              <img src="assets/pricing1.png" alt="Basique">
+              <h3>Basique</h3>
+              <p class="prix">30€</p>
+          </div>
+          <ul class=" checklist">
+              <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
+              <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(2 jours/semaine)</li>
+              <li class="invalid"><i class="fa-solid fa-circle-xmark"></i>Accès aux cours collectifs</li>
+              <li class="invalid"><i class="fa-solid fa-circle-xmark"></i> Programme nutrition</li>
+          </ul>
+          <button class="btn">Réserver →</button>
+      </div>
 
-        <section class="abonnement">
-            <h2 class="main-section-title main-section-title title-avis">Mes formules !</h2>
-            <div id="container">
-                <div class="program"> <!--subscription? plan?-->
-                    <div class="program-header">
-                        <img src="assets/pricing1.png" alt="Basique">
-                        <h3>Basique</h3>
-                        <p class="prix">30€</p>
-                    </div>
-                    <ul class=" checklist">
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé<span>(2 jours/semaine)</span></li>
-                        <li class="invalid"><i class="fa-solid fa-circle-xmark"></i> Accès aux cours collectifs</li>
-                        <li class="invalid"><i class="fa-solid fa-circle-xmark"></i> Programme nutrition</li>
-                    </ul>
-                    <button class="btn">Réserver →</button>
-                </div>
+      <div class="program-vert">
+          <div class="program-header">
+              <img src="assets/pricing2.png" alt="Silver">
+              <h3 id="silver">Silver</h3>
+              <p class="prix">50€</p>
+          </div>
+          <ul class="checklist">
+              <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Accès à la salle de sport</li>
+              <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Coaching personnalisé <br>(3 jours/semaine)</li>
+              <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e"></i>Accès aux cours collectifs</li>
+              <li class="invalid"><i class="fa-solid fa-circle-xmark"></i> Programme nutrition</li>
+          </ul>
+          <button id="btnV">Réserver →</button>
+      </div>
 
-                <div class="program-vert program">
-                    <div class="program-header">
-                        <img src="assets/pricing2.png" alt="Silver">
-                        <h3 id="silver">Silver</h3>
-                        <p class="prix">50€</p>
-                    </div>
-                    <ul class="checklist">
-                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Accès à la salle de sport</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Coaching personnalisé <span>(3 jours/semaine)</span></li>
-                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e"></i>Accès aux cours collectifs</li>
-                        <li class="invalid"><i class="fa-solid fa-circle-xmark"></i>  Programme nutrition</li>
-                    </ul>
-                    <button id="btnV">Réserver →</button>
-                </div>
+      <div class="program">
+          <div class="program-header">
+              <img src="assets/pricing3.png" alt="Premium">
+              <h3>Premium</h3>
+              <p class="prix">100€</p>
+          </div>
+          <ul class="checklist">
+              <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
+              <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(5 jours/semaine)</li>
+              <li class="valid"><i class="fa-solid fa-circle-check"></i>Accès aux cours collectifs</li>
+              <li class="valid"><i class="fa-solid fa-circle-check"></i>Programme nutrition</li>
+          </ul>
+          <button class="btn">Réserver →</button>
+      </div>
+  </div>
+</section>
 
-                <div class="program">
-                    <div class="program-header">
-                        <img src="assets/pricing3.png" alt="Premium">
-                        <h3>Premium</h3>
-                        <p class="prix">100€</p>
-                    </div>
-                    <ul class="checklist">
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <span>(5 jours/semaine)</span></li>
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Accès aux cours collectifs</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Programme nutrition</li>
-                    </ul>
-                    <button class="btn">Réserver →</button>
-                </div>
-              </div>
-              <div class="carousel-controls">
-                <button class="carousel-btn" id="prev">◀</button>
-                <button class="carousel-btn" id="next">▶</button>
-            </div>
-            
 
-        </section>
+<!--==================== Valentin Fin ====================-->
 
         
         <!--==================== Valentin Fin ====================-->
