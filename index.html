@@ -86,7 +86,7 @@
               <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
-          <div class="home-images">
+          <div class="home-images ">
             <div class="home-triangle"></div>
             <img
               src="./assets/home-img.png"
@@ -101,7 +101,7 @@
 
         <!--==================== CYNTHIA: DEBUT ====================-->
 
-        <section id="bienvenueChezMicka">
+        <section id="bienvenueChezMicka" class="bienvenueChezMicka">
 
             <article id="illustration">
                 <img src="polygonSection2.png" alt="photo1" class="photo1">
@@ -109,7 +109,7 @@
 
             </article>
 
-            <article id="descriptionbio">
+            <article id="descriptionbio" class="descriptionbio">
                 <h2 id="Bienvenue">Bienvenue Chez <span class="firstname">MICKA</span></h2>
 
                 <h3 id="commando">Le Coaching Commando</h3>
@@ -141,14 +141,14 @@
                     </div>
                     <ul class=" checklist">
                         <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(2 jours/semaine)</li>
-                        <li class="invalid"><p>✖</p> Accès aux cours collectifs</li>
-                        <li class="invalid"><p>✖</p> Programme nutrition</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé<span>(2 jours/semaine)</span></li>
+                        <li class="invalid"><i class="fa-solid fa-circle-xmark"></i> Accès aux cours collectifs</li>
+                        <li class="invalid"><i class="fa-solid fa-circle-xmark"></i> Programme nutrition</li>
                     </ul>
                     <button class="btn">Réserver →</button>
                 </div>
 
-                <div class="program-vert">
+                <div class="program-vert program">
                     <div class="program-header">
                         <img src="assets/pricing2.png" alt="Silver">
                         <h3 id="silver">Silver</h3>
@@ -156,9 +156,9 @@
                     </div>
                     <ul class="checklist">
                         <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Accès à la salle de sport</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Coaching personnalisé <br>(3 jours/semaine)</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Coaching personnalisé <span>(3 jours/semaine)</span></li>
                         <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e"></i>Accès aux cours collectifs</li>
-                        <li class="invalid"><p>✖</p>  Programme nutrition</li>
+                        <li class="invalid"><i class="fa-solid fa-circle-xmark"></i>  Programme nutrition</li>
                     </ul>
                     <button id="btnV">Réserver →</button>
                 </div>
@@ -171,13 +171,19 @@
                     </div>
                     <ul class="checklist">
                         <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
-                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(5 jours/semaine)</li>
+                        <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <span>(5 jours/semaine)</span></li>
                         <li class="valid"><i class="fa-solid fa-circle-check"></i>Accès aux cours collectifs</li>
                         <li class="valid"><i class="fa-solid fa-circle-check"></i>Programme nutrition</li>
                     </ul>
                     <button class="btn">Réserver →</button>
                 </div>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" id="prev">◀</button>
+                <button class="carousel-btn" id="next">▶</button>
             </div>
+            
+
         </section>
 
         
@@ -274,7 +280,7 @@
       <section class="testimonials" id="testimonials">
         <h2 class="main-section-title title-avis">Avis de nos clients</h2>
         <div class="carousel">
-          <button id="prevBtn" class="carousel-btn">&#10094;</button>
+          <button id="prevBtn" class="carousel-btn-avis">&#10094;</button>
           <div class="carousel-container">
             <div class="testimonial">
               <div class="testimonial-header">
@@ -371,7 +377,7 @@
               </p>
             </div>
           </div>
-          <button id="nextBtn" class="carousel-btn">&#10095;</button>
+          <button id="nextBtn" class="carousel-btn-avis">&#10095;</button>
         </div>
         <div class="evalutaion-google">
           <p>Evaluation Google : 5 / 5, basée sur 6 avis</p>
@@ -383,9 +389,8 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
-    
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/script.js"></script>
-    <script src="./js/gsap.js"></script>
     <script src="./js/scroll.js"></script>
   </body>
 </html>

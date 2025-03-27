@@ -24,8 +24,9 @@ body {
 }
 
 main {
-	max-width: 1200px;
-	margin: auto;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
 }
 
 a {
@@ -52,10 +53,10 @@ header {
       rgba(179, 213, 55, 0.1) 100%);
   height: 80px;
   z-index: 10;
+  width: 100%;
 }
 
 .header-navbar {
-  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -142,6 +143,7 @@ nav a:hover {
 /*=============== HOME IMANE ===============*/
 section.home {
   margin-top: 100px;
+  width: 100%;
 
 
 }
@@ -159,7 +161,6 @@ section.home {
   align-items: flex-start;
   justify-content: center;
   gap: 10px;
-  padding-left: 50px;
   margin-top: 100px;
 }
 
@@ -251,6 +252,7 @@ section.home {
 	height: 100vh;
 	display: flex;
 	justify-content: space-between;
+	
 }
 
 /*premier article à gauche : photo de Micka*/
@@ -282,12 +284,6 @@ section.home {
 	justify-content: space-evenly;
 	align-items: center;
 	text-align: center;
-	/*display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	gap: 10px;
-	padding-left: 50px;*/
 }
 
 #Bienvenue {
@@ -319,8 +315,8 @@ section.home {
 	color: var(--darkGreen-color);
 	font-size: 1rem;
 	border-radius: 20px;
-	width: 24vw;
-	padding: 18px 36px;
+	width: 60%;
+	padding: 10px 36px;
 	font-weight: bold;
 	letter-spacing: 1px;
 	border: 2px solid #b3d537;
@@ -367,9 +363,9 @@ section.home {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	gap: 20px;
-	max-width: 1200px;
+	gap: 15px;
 	margin: auto;
+  width: 100%;
 }
 
 .program,
@@ -401,6 +397,11 @@ section.home {
 	color: white;
 }
 
+.valid span {
+  margin-left: 5px;
+  font-size: .6rem;
+}
+
 .program-vert .valid {
 	color: black;
 }
@@ -408,6 +409,7 @@ section.home {
 .prix {
 	font-size: 2rem;
 	margin: 20px 0;
+  font-family: "Academy Engraved LET", sans-serif;
 }
 
 .abonnement li {
@@ -429,11 +431,12 @@ section.home {
 	transition: transform 0.3s ease;
 	cursor: pointer;
 	text-align: center;
+  width: 80%;
 }
 
 .btn:hover,
 #btnV:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 #btnV {
@@ -452,7 +455,7 @@ section.home {
 	display: flex;
 	align-items: center;
 	padding: 8px 0;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 .fa-circle-check {
@@ -460,31 +463,17 @@ section.home {
 	margin-right: 15px;
 }
 
+.fa-circle-xmark {
+  margin-right: 10px;
+}
+
+
 .invalid p {
 	margin-right: 15px;
 }
 
-@media screen and (max-width: 768px) {
-	#container {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.program,
-	.program-vert {
-		width: 90%;
-		max-width: 100%;
-		padding: 15px;
-	}
-
-	.btn,
-	#btnV {
-		width: 100%;
-	}
-
-	.checklist li {
-		font-size: 1rem;
-	}
+.carousel-btn {
+  display: none;
 }
 
 /*==================== Valentin fin==================== */
@@ -513,6 +502,7 @@ section.home {
 	gap: 20px;
 	max-width: 1200px;
 	margin: auto;
+
 }
 .tickets {
 	background-color: var(--prog-color);
@@ -523,14 +513,23 @@ section.home {
 	padding: 20px;
 	font-family: var(--paragraphe-font);
 	transition: transform 0.3s ease-in-out;
+  color: white;
 }
 
 .tickets:hover {
-	color: white;
-	background-color: #1d2c1f;
+	color: black;
+	background-color: var(--green-color);
 	box-shadow: 0 0 10px #afafaf;
-	transform: scale(1.1);
+	transform: scale(1.02);
 	transition: transform 0.3s ease-in-out;
+}
+
+.tickets:hover h3 {
+  color: black; /* Titre en noir */
+}
+
+.tickets:hover .explanation {
+  color: black; /* Texte explicatif en noir */
 }
 
 .training-header img {
@@ -539,31 +538,17 @@ section.home {
 	margin-bottom: auto;
 }
 .trainings p {
-	padding: 10px;
+	padding: 10px 0;
 	font-size: 1rem;
 	font-family: var(--paragraphe-font);
 	color: #afafaf;
-	max-width: 500px;
+	max-width: 100%;
 	line-height: 2;
 }
 
-@media screen and (max-width: 768px) {
-	#program-listing {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	#musculation,
-	#cardio-training,
-	#crossfit,
-	#HIT {
-		width: 90%;
-		max-width: 100%;
-		padding: 15px;
-	}
-}
 /*==================== PROGRAMME CYNTHIA: FIN ====================*/
 
+/*==================== CHOOSE COACHING MICKA IMANE: DEBUT ====================*/
 .choose {
   display: flex;
   justify-content: center;
@@ -668,9 +653,7 @@ section.home {
   }
 }
 
-
-
-/*=============== DEBUT SECTION CHOOSE IMANE ===============*/
+/*==================== CHOOSE COACHING MICKA IMANE: DEBUT ====================*/
 
 
 /*=============== DEBUT SECTION AVIS IMANE ===============*/
@@ -776,7 +759,7 @@ section.home {
 }
 
 /* Boutons de navigation */
-.carousel-btn {
+.carousel-btn-avis {
   background: none;
   border: none;
   font-size: 2rem;
@@ -787,7 +770,7 @@ section.home {
   z-index: 1;
 }
 
-.carousel-btn:hover {
+.carousel-btn-avis:hover {
 	color: var(--green-color, #28a745);
 }
 
@@ -811,9 +794,9 @@ section.home {
 }
 
 .calculate-content {
-	width: 70%;
+	width: 100%;
 	margin: auto;
-	padding: 0 40px;
+	/* padding: 0 40px; */
 }
 
 .calculate-content .section-titles {
@@ -855,7 +838,7 @@ section.home {
 .calculate-box {
 	border: 1px solid var(--green-color);
 	width: 100%;
-	border-radius: 20px;
+	border-radius: 5px;
 }
 
 .calculate-input {
@@ -867,6 +850,10 @@ section.home {
 	color: #fafafa;
 	display: flex;
 	align-items: center;
+}
+
+.calcule-imc-btn {
+  border-radius: 5px;
 }
 
 form .main-btn {
@@ -959,6 +946,7 @@ form .main-btn {
   color: var(--green-color);
 }
 
+/* ===============FIN FORMULAIRE VALENTIN ============*/
 
 /* scrollup IMANE */
 

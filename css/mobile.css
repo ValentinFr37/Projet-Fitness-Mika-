@@ -30,7 +30,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 30px;
+  gap: 20px;
   background-color: hsla(180, 12%, 8%, .8);
   backdrop-filter: blur(32px);
   top: 0;
@@ -53,7 +53,7 @@ header {
 }
 
 .logo img {
-  width: 170px;
+  padding-top: 20px;
 }
 
 .nav-links {
@@ -80,10 +80,6 @@ header {
   cursor: pointer;
 }
 
-/* .fa-xmark {
-  display: none;
-} */
-
 
 .nav-close {
   position: absolute;
@@ -91,10 +87,6 @@ header {
   right: 0.2rem;
   z-index: 7;
 }
-
-/* .nav-close.active {
-  display: none;
-} */
 
 .show-menu {
   right: 0;
@@ -104,16 +96,12 @@ header {
   color: green;
 }
 
-
 /* FIN HEADER BURGER */
 
-main {
-	height: 100vh;
-}
 
-/* SECTION HOME IMANE */
+/* DEBUT SECTION HOME IMANE */
 section.home {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   margin-top: 150px;
 }
 .home-container {
@@ -179,6 +167,8 @@ section.home {
 	height: 500px;
 	z-index: -1;
 }
+/* FIN SECTION HOME IMANE */
+
 /* SECTION BIOGRAPHIE  */
 #bienvenueChezMicka {
 	display: flex;
@@ -204,11 +194,103 @@ section.home {
 	padding: 0 20px;
 	text-align: center;
 }
+
+#bio {
+  width: 100%;
+}
+
+/* FIN SECTION BIOGRAPHIE CYNTHIA */
+
+/* DEBUT ABONNEMENT VALENTIN */
+
+#container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  position: relative;
+  height: auto;
+}
+
+.program,
+.program-vert {
+  min-width: 75%; /* Chaque abonnement prend toute la largeur */
+  display: none; /* Cacher tous les abonnements par défaut */
+  transition: opacity 0.5s ease-in-out;
+  padding: 20px 0;
+}
+
+.program-header h3 {
+  font-size: 1.4rem;
+}
+
+/* Afficher uniquement l'abonnement actif */
+.program.active,
+.program-vert.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+/* Boutons de navigation */
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.carousel-btn {
+  display: block;
+  background-color: var(--green-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+  background-color: var(--prog-color);
+}
+
+.checklist li {
+  font-size: .9rem;
+}
+
+.checklist li span {
+  font-size: .5rem;
+}
+/* DEBUT ABONNEMENT VALENTIN */
+
+/* DEBUT SECTION PROGRAM  */
 .trainings {
 	height: auto;
 }
 
-/* FIN SECTION BIOGRAPHIE CYNTHIA */
+.trainings h3 {
+  font-size: 1.4rem;
+}
+
+#program-listing {
+  flex-direction: column;
+  align-items: center;
+}
+
+#musculation,
+#cardio-training,
+#crossfit,
+#HIT {
+  width: 75%;
+  max-width: 100%;
+  padding: 15px;
+}
+/* DEBUT SECTION PROGRAM  */
+
 
 /* DEBUT CHOOSE IMANE */
 .choose {
@@ -235,21 +317,15 @@ section.home {
   font-size: 1.5rem;
   margin: auto;
 }
-
-.choose-title {
-
-}
-
-
 /* FIN CHOOSE IMANE */
 
-/* LES AVIS IMANE */
+/* DEBUT LES AVIS IMANE */
 
 .title-avis {
   font-size: 1.5rem;
   width: 100%;
   margin: auto;
-  padding: 20px;
+  padding: 20px 0;
   margin-bottom: 15px;
 }
 .testimonial {
@@ -272,17 +348,17 @@ section.home {
 .evalutaion-google p {
   font-size: 1rem;
 }
+/* FIN LES AVIS IMANE */
 
-/* calculer IMC IMANE*/
+/* DEBUT calculer IMC IMANE*/
 
 .calculate-container {
 	display: flex;
 	flex-direction: column-reverse;
-	padding: 0 20px;
 }
 
 .calculate-content {
-	width: 100%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -304,6 +380,10 @@ section.home {
   margin-bottom: 40px;
 }
 
+.calculate-input {
+  padding: 20px 10px;
+}
+
 .imc-form {
   display: flex;
   flex-direction: column;
@@ -314,29 +394,28 @@ section.home {
 }
 
 .calculate-form {
-  width: 100%;
+  width: 80vw;
   margin: auto;
 }
 
-/* HEADER BURGER IMANE */
-
 .partner-container {
-  max-width: 400px; /* Limite la largeur à 400px */
+  max-width: 400px;
   padding: 0 10px;
 }
-
-
-
-/* CALCULE IMC */
 
 .calculate-img  {
   max-width: 150px;
 }
+
+/* DEBUT calculer IMC IMANE*/
+
 /* modifs Micka*/
 .testimonials {
 	margin-top: 0;
 }
 /* fin de modifs*/
+
+/* DEBUT FORMULAIRE VALENTIN */
 .partie-1 {
 	display: none;
 }
@@ -359,3 +438,9 @@ section.home {
 	text-align: center;
 	font-size: 1.3rem;
 }
+
+/* FIN FORMULAIRE VALENTIN */
+
+
+
+
