@@ -63,17 +63,17 @@
 
     <main>
       
-        <section class="formulaire">
+        <section class="formulaire hidden">
             <div class="partie-1">
                 <img src="./assets/calculate-img.png">
             </div>
-            <div class="partie-2">
+            <div id="contactForm" class="partie-2">
                 <h3>Réservez votre consultation <a>OFFERTE</a></h3>
                 <p>Veuillez remplir le formulaire ci dessous pour reserver votre consultation offerte, Mickaël vous recontactera au plus vite !</p>
                 <form class="contact-form">
-                    <input type="text" name="nom" placeholder="votre nom" required>
-                    <input type="email" name="email" placeholder="votre mail" required>
-                    <textarea name="message" placeholder="votre message" required></textarea>
+                    <input type="text" name="nom" placeholder="Votre prénom" required>
+                    <input type="email" name="email" placeholder="Votre mail" required>
+                    <textarea name="message" placeholder="Votre message" required></textarea>
                     <button type="submit">Envoyer</button>
                 </form>
             </div>
@@ -84,7 +84,7 @@
 
 <!--==================== CALCULATE ====================-->
 
-      <section class="calculate">
+      <section class="calculate hidden">
         <div class="calculate-container container">
           <div class="calculate-content">
             <div class="section-titles">
@@ -130,7 +130,12 @@
           />
         </div>
       </section>
+      <script src="./js/scroll.js"></script>
+      <script src="./js/formulaire.js"></script>
+    
+    
     </main>
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </body>
 </html>

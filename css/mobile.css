@@ -108,7 +108,7 @@ header {
 /* FIN HEADER BURGER */
 
 main {
-  height: 100vh;
+	height: 100vh;
 }
 
 /* SECTION HOME IMANE */
@@ -117,10 +117,10 @@ section.home {
   margin-top: 150px;
 }
 .home-container {
-  grid-template-columns: 1fr;
-  padding-top: 2rem;
-  display: flex;
-  flex-direction: column-reverse;
+	grid-template-columns: 1fr;
+	padding-top: 2rem;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 .home-data {
@@ -135,12 +135,12 @@ section.home {
 }
 
 .home-img {
-  display: block;
-  width: 70%;
-  margin: auto;
-  transform: none;
-  padding: 0 20px;
-  margin-bottom: 20px;
+	display: block;
+	width: 70%;
+	margin: auto;
+	transform: none;
+	padding: 0 20px;
+	margin-bottom: 20px;
 }
 
 .home-title {
@@ -171,14 +171,44 @@ section.home {
 }
 
 .home-triangle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  clip-path: polygon(0 0, 100% 100%, 100% 0);
-  width: 80%;
-  height: 500px;
-  z-index: -1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	clip-path: polygon(0 0, 100% 100%, 100% 0);
+	width: 80%;
+	height: 500px;
+	z-index: -1;
 }
+/* SECTION BIOGRAPHIE  */
+#bienvenueChezMicka {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+#photo1 {
+	width: 41%;
+}
+#photo2 {
+	width: 41%;
+}
+#illustration {
+	display: none;
+}
+
+#descriptionbio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	padding: 0 20px;
+	text-align: center;
+}
+.trainings {
+	height: auto;
+}
+
+/* FIN SECTION BIOGRAPHIE CYNTHIA */
 
 /* DEBUT CHOOSE IMANE */
 .choose {
@@ -227,16 +257,16 @@ section.home {
 }
 
 .testimonial-header {
-  flex-direction: column;
-  align-items: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 .testimonial-name {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .testimonial-date {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .evalutaion-google p {
@@ -246,25 +276,25 @@ section.home {
 /* calculer IMC IMANE*/
 
 .calculate-container {
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 0 20px;
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 0 20px;
 }
 
 .calculate-content {
-  width: 100%;
-  margin: auto;
+	width: 100%;
+	margin: auto;
 }
 
 .calculate-content .section-titles {
-  margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .section-title-border,
 .section-title-border span {
-  font-size: 2rem;
-  text-align: center;
-  align-items: center;
+	font-size: 2rem;
+	text-align: center;
+	align-items: center;
 }
 
 .calculate-description {
@@ -288,6 +318,7 @@ section.home {
   margin: auto;
 }
 
+/* HEADER BURGER IMANE */
 
 .partner-container {
   max-width: 400px; /* Limite la largeur à 400px */
@@ -300,4 +331,31 @@ section.home {
 
 .calculate-img  {
   max-width: 150px;
+}
+/* modifs Micka*/
+.testimonials {
+	margin-top: 0;
+}
+/* fin de modifs*/
+.partie-1 {
+	display: none;
+}
+
+.formulaire {
+	justify-content: center;
+}
+.partie-2 p {
+	width: 100%;
+}
+.contact-form {
+	width: 80vw;
+}
+
+.contact-form input {
+	text-align: center;
+	font-size: 1.3rem;
+}
+.contact-form textarea {
+	text-align: center;
+	font-size: 1.3rem;
 }
