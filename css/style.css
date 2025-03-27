@@ -26,6 +26,7 @@ body {
 main {
   max-width: 1200px;
   margin: auto;
+  width: 100%;
 }
 
 a {
@@ -318,6 +319,8 @@ main {
 
 /* ====================ABONNEMENT VALENTIN ====================*/
 
+/* ====================ABONNEMENT VALENTIN ====================*/
+
 .main-section-title {
   font-family: var(--h2-font);
   color: var(--green-color);
@@ -551,7 +554,7 @@ main {
 
 /*==================== PROGRAMME CYNTHIA: FIN ====================*/
 
-/* ====================SECTION AVIS IMANE  ====================*/
+/*=============== DEBUT SECTION AVIS IMANE ===============*/
 .testimonials {
   text-align: center;
   padding: 50px 20px;
@@ -668,6 +671,8 @@ main {
   font-family: var(--paragraphe-font);
 }
 
+/*=============== FIN SECTION AVIS IMANE ===============*/
+
 /*=============== CALCULE IMC IMANE ===============*/
 
 .calculate-container {
@@ -733,6 +738,10 @@ main {
   color: #fafafa;
   display: flex;
   align-items: center;
+}
+
+.calcule-imc-btn {
+  border-radius: 5px;
 }
 
 form .main-btn {
@@ -832,18 +841,10 @@ form .main-btn {
   color: var(--green-color);
 }
 
-.coaching-section {
-  padding: 50px 20px;
-}
-
-
-
-footer {
-  background-color: #0D1715;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 footer .logo {

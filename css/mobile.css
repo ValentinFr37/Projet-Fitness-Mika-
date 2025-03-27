@@ -1,31 +1,108 @@
 /* HEADER BURGER IMANE */
 
 header {
-	padding: 10px 0;
-	display: flex;
-	flex-direction: row-reverse;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  position: fixed;
+  inset: 0;
+}
+
+.nav-toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+  z-index: 7;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-xmark {
+  display: block;
+  cursor: pointer;
 }
 
 .navbar {
-	display: none;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  background-color: hsla(180, 12%, 8%, .8);
+  backdrop-filter: blur(32px);
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  border-left: 2px solid white;
+  transition: right .3s;
+  z-index: 6;
+}
+
+.navbar nav {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.navbar a {
+  display: flex;
+}
+
+.logo img {
+  padding-top: 20px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  padding: 5rem 0 0 3rem;
+  color: black;
+  transition: color .3s;
+}
+
+.nav-links:hover {
+  color: green;
 }
 
 .fa-bars {
-	display: block;
-	font-size: 3rem;
-	color: white;
-	padding: 10px;
-	cursor: pointer;
+  display: block;
 }
+
+.fa-bars, .fa-xmark{
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.nav-close {
+  position: absolute;
+  top: 1.7rem;
+  right: 0.2rem;
+  z-index: 7;
+}
+
+.show-menu {
+  right: 0;
+}
+
+.active-link {
+  color: var(--green-color);
+}
+
 /* FIN HEADER BURGER */
 
-main {
-	height: 100vh;
-}
 
-/* SECTION HOME IMANE */
+/* DEBUT SECTION HOME IMANE */
 section.home {
-	margin-bottom: 70px;
+  margin-bottom: 60px;
+  margin-top: 150px;
 }
 .home-container {
 	grid-template-columns: 1fr;
@@ -35,13 +112,14 @@ section.home {
 }
 
 .home-data {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 40px;
-	padding: 0 20px;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 20px;
+  text-align: center;
+  margin-top: 0;
 }
 
 .home-img {
@@ -54,27 +132,30 @@ section.home {
 }
 
 .home-title {
-	order: 1;
-	font-size: 2rem;
-	margin-bottom: 0;
+  order: 1;
+  font-size: 2rem;
+  margin-bottom: 0;
+  padding: 10px 0;
 }
 
 .home-subtitle {
-	order: 2;
-	font-size: 2rem;
+  order: 2;
+  font-size: 2rem;
+  padding: 0;
 }
 
 .home-description {
-	order: 4;
-	font-size: 1rem;
-	margin-bottom: 0rem;
+  width: 100%;
+  order: 4;
+  font-size: 1rem;
+  margin-bottom: 0rem;
+  padding: 0;
 }
 
 .button-consultation {
-	order: 4;
-	margin-top: 0.9rem;
-	font-size: 1rem;
-	padding: 12px 15px;
+  order: 4;
+  font-size: 1rem;
+  padding: 12px 15px;
 }
 
 .home-triangle {
@@ -86,6 +167,8 @@ section.home {
 	height: 500px;
 	z-index: -1;
 }
+/* FIN SECTION HOME IMANE */
+
 /* SECTION BIOGRAPHIE  */
 #bienvenueChezMicka {
 	display: flex;
@@ -111,23 +194,116 @@ section.home {
 	padding: 0 20px;
 	text-align: center;
 }
-.trainings {
-	height: auto;
+
+#bio {
+  width: 100%;
 }
 
 /* FIN SECTION BIOGRAPHIE CYNTHIA */
 
-/* LES AVIS IMANE */
+/* DEBUT ABONNEMENT VALENTIN */
+
+#container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.program,
+.program-vert {
+  width: 90%;
+  max-width: 100%;
+  padding: 15px;
+}
+
+.btn,
+#btnV {
+  width: 100%;
+}
+
+.checklist li {
+  font-size: 1rem;
+}
+/* FIN ABONNEMENT VALENTIN */
+
+/* DEBUT SECTION PROGRAM  */
+.trainings {
+	height: auto;
+}
+
+.trainings h3 {
+  font-size: 1.4rem;
+}
+
+.tickets:hover {
+	color: black;
+	background-color: var(--green-color);
+	box-shadow: 0 0 10px #afafaf;
+	transform: scale(1.1);
+	transition: transform 0.3s ease-in-out;
+}
+
+.tickets:hover h3 {
+  color: black; /* Titre en noir */
+}
+
+.tickets:hover .explanation {
+  color: black; /* Texte explicatif en noir */
+}
+
+#program-listing {
+  flex-direction: column;
+  align-items: center;
+}
+
+#musculation,
+#cardio-training,
+#crossfit,
+#HIT {
+  width: 75%;
+  max-width: 100%;
+  padding: 15px;
+}
+/* DEBUT SECTION PROGRAM  */
+
+
+/* DEBUT CHOOSE IMANE */
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 580px;
+  margin: auto;
+  padding: 20px;
+}
+
+.choose-description {
+  max-width: 500px;
+  width: 100%;
+}
+
+.choose-data {
+  width: 100%;
+}
+
+.main-section-title {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: auto;
+}
+/* FIN CHOOSE IMANE */
+
+/* DEBUT LES AVIS IMANE */
 
 .title-avis {
-	font-size: 2rem;
-	width: 100%;
-	margin: auto;
-	padding: 20px;
-	margin-bottom: 15px;
+  font-size: 1.5rem;
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  margin-bottom: 15px;
 }
 .testimonial {
-	flex: 0 0 70%;
+  flex: 0 0 70%;
 }
 
 .testimonial-header {
@@ -143,16 +319,20 @@ section.home {
 	margin-bottom: 10px;
 }
 
-/* calculer IMC IMANE*/
+.evalutaion-google p {
+  font-size: 1rem;
+}
+/* FIN LES AVIS IMANE */
+
+/* DEBUT calculer IMC IMANE*/
 
 .calculate-container {
 	display: flex;
 	flex-direction: column-reverse;
-	padding: 0 20px;
 }
 
 .calculate-content {
-	width: 100%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -168,32 +348,48 @@ section.home {
 }
 
 .calculate-description {
-	width: 85%;
-	margin: auto;
-	line-height: 1.7;
-	margin-bottom: 40px;
+  width: 100%;
+  margin: auto;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.calculate-input {
+  padding: 20px 10px;
 }
 
 .imc-form {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
 }
 
 .calculate-form {
-	width: 85%;
-	margin: auto;
+  width: 80vw;
+  margin: auto;
 }
 
-/* HEADER BURGER IMANE */
+.partner-container {
+  max-width: 400px;
+  padding: 0 10px;
+}
+
+.calculate-img  {
+  max-width: 150px;
+}
+
+/* DEBUT calculer IMC IMANE*/
 
 /* modifs Micka*/
 .testimonials {
 	margin-top: 0;
 }
 /* fin de modifs*/
+
+/* DEBUT FORMULAIRE VALENTIN */
 .partie-1 {
 	display: none;
 }
@@ -216,3 +412,9 @@ section.home {
 	text-align: center;
 	font-size: 1.3rem;
 }
+
+/* FIN FORMULAIRE VALENTIN */
+
+
+
+

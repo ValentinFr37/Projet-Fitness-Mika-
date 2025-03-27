@@ -27,6 +27,7 @@
   
   .loading-container h2 {
     font-size: 2rem;
+    font-family: "Black Ops One", sans-serif;
     margin-top: 20px;
     font-weight: bold;
     animation: fadeInText 2s ease-out;
