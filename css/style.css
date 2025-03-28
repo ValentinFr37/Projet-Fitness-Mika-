@@ -287,6 +287,7 @@ section.home {
 	font-family: var(--h2-font);
 	font-size: 2.5rem;
 }
+
 .firstname {
 	color: var(--green-color);
 	font-weight: bold;
@@ -319,6 +320,7 @@ section.home {
 	border: 2px solid #b3d537;
 	cursor: pointer;
 }
+
 .a-propos:hover {
 	color: white;
 	background-color: #1d2c1f;
@@ -494,6 +496,7 @@ section.home {
 	font-size: 28px;
 	color: var(--green-color);
 }
+
 #program-listing {
 	display: flex;
 	flex-wrap: wrap;
@@ -502,6 +505,7 @@ section.home {
 	max-width: 1200px;
 	margin: auto;
 }
+
 .tickets {
 	background-color: var(--prog-color);
 	width: 17%;
@@ -526,6 +530,7 @@ section.home {
 	width: 50px;
 	margin-bottom: auto;
 }
+
 .trainings p {
 	padding: 10px;
 	font-size: 1rem;
@@ -613,9 +618,11 @@ section.home {
 	display: flex;
 	overflow: hidden;
 	position: relative;
-	max-width: 1300px; /* Limite à 1300px en desktop */
+	max-width: 1300px;
+	/* Limite à 1300px en desktop */
 	width: 100%;
-	margin: auto; /* Centre la div */
+	margin: auto;
+	/* Centre la div */
 	white-space: nowrap;
 }
 
@@ -627,7 +634,8 @@ section.home {
 }
 
 .partner img {
-	height: 50px; /* Ajuste selon tes besoins */
+	height: 50px;
+	/* Ajuste selon tes besoins */
 	object-fit: contain;
 }
 
@@ -860,9 +868,11 @@ form .main-btn {
 .formulaire {
 	display: flex;
 }
+
 .partie-1 {
 	width: 40vw;
 }
+
 .partie-1 img {
 	width: 300px;
 	justify-self: center;
@@ -901,10 +911,12 @@ form .main-btn {
 	color: white;
 	font-size: 16px;
 }
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
 	color: gray;
 }
+
 .contact-form button {
 	background-color: #b1dc39;
 	color: black;
@@ -916,11 +928,13 @@ form .main-btn {
 	cursor: pointer;
 	transition: 0.3s;
 }
+
 .contact-form button:hover {
 	color: white;
 	background-color: #1d2c1f;
 	box-shadow: 0 0 10px #afafaf;
 }
+
 .partie-2 p {
 	font-family: var(--paragraphe-font);
 	color: var(--paragraphe-color);
@@ -957,6 +971,7 @@ form .main-btn {
 .show-scroll {
 	bottom: 3rem;
 }
+
 .hidden {
 	opacity: 0;
 	transform: translateY(30px);
@@ -978,4 +993,78 @@ form .main-btn {
 	opacity: 0;
 	transform: translateY(30px);
 	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+footer .logo {
+	display: block;
+	margin: 0 auto 10px;
+	width: 130px;
+}
+
+footer h2 {
+	display: flex;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 0;
+	justify-content: center;
+	color: white;
+}
+
+footer p {
+	display: flex;
+	font-size: 14px;
+	margin: 5px 0;
+	justify-content: center;
+	color: white;
+}
+
+footer .separator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0;
+}
+
+footer .separator::before,
+footer .separator::after {
+	content: "";
+	flex: 1;
+	height: 2px;
+	background-color: #b3d537;
+	margin: 0 70px;
+}
+
+footer .social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin: 15px 0;
+}
+
+footer .social-icons a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-decoration: none;
+}
+
+footer .social-icons a img {
+	width: 50px;
+	height: 50px;
+}
+
+footer .copyright {
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.6);
+	margin-top: 10px;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 12px;
+	color: white;
+	margin-top: 10px;
 }

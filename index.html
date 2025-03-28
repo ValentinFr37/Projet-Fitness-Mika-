@@ -1,186 +1,413 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" href="./mika fitness.ico" type="image/x-icon" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Londrina+Outline&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/f629b691f4.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Mika Fitness</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/loader.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mobile.css" only media="screen and (max-width: 768px)" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="./mika fitness.ico" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Londrina+Outline&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/f629b691f4.js" crossorigin="anonymous"></script>
+  <title>Mika Fitness</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/loader.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mobile.css" only media="screen and (max-width: 768px)" />
 
 </head>
 
-  <body>
-    <div class="loading-container" id="loadingScreen">
-      <div class="loader"></div>
-      <h2>Entraînement en cours...</h2>
-      <p>Prépare-toi à performer avec Mika !</p>
+<body>
+  <div class="loading-container" id="loadingScreen">
+    <div class="loader"></div>
+    <h2>Entraînement en cours...</h2>
+    <p>Prépare-toi à performer avec Mika !</p>
+  </div>
+
+  <header>
+    <!-- Toggle button -->
+
+
+    <div class="header-navbar">
+      <div class="logo">
+        <a href="index.html"><img src="./assets/Logo Projet1.png" alt="logo" /></a>
+      </div>
+      <div class="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="navbar">
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active-link">Accueil</a></li>
+            <li>
+              <a href="#bienvenueChezMicka" class="nav-link ">Découvrez le coach</a>
+            </li>
+            <li><a href="#abonnement" class="nav-link">Abonnements</a></li>
+            <li><a href="#trainings" class="nav-link">Programmes</a></li>
+            <li><a href="#testimonials" class="nav-link">Avis</a></li>
+          </ul>
+        </nav>
+        <a href="./consultation.html" class="main-btn-header">
+          <span>Consultation </span> <span> OFFERTE</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <div class="nav-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
     </div>
+  </header>
 
-    <header>
-      <!-- Toggle button -->
+  <!--==================== MAIN ====================-->
 
-
-      <div class="header-navbar">
-        <div class="logo">
-          <a href="index.html"
-            ><img src="./assets/Logo Projet1.png" alt="logo"
-          /></a>
-        </div>
-        <div class="nav-toggle">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="navbar">
-          <nav>
-            <ul class="nav-links" id="navLinks">
-              <li><a href="#home" class="nav-link active-link">Accueil</a></li>
-              <li>
-                <a href="#bienvenueChezMicka" class="nav-link ">Découvrez le coach</a>
-              </li>
-              <li><a href="#abonnement" class="nav-link">Abonnements</a></li>
-              <li><a href="#trainings" class="nav-link">Programmes</a></li>
-              <li><a href="#testimonials" class="nav-link">Avis</a></li>
-            </ul>
-          </nav>
-          <a href="./consultation.html" class="main-btn-header">
-            <span>Consultation </span> <span> OFFERTE</span>
+  <!--==================== DEBUT HOME IMANE ====================-->
+  <main>
+    <section class="home" id="home">
+      <div class="home-container">
+        <div class="home-data">
+          <h1 class="home-title">Coaching Commando avec</h1>
+          <h2 class="home-subtitle">Mickael Le Faux</h2>
+          <p class="home-description">
+            Mickael, coach ultra-motivé et plein de good vibes et kiff total!
+            Il t’aide à te dépasser sans prise de tête. Avec lui,
+            transpiration et motivation vont de pair !
+          </p>
+          <a href="./consultation.html" class="button-consultation main-btn">
+            <span>Consultation</span> <span>OFFERTE</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
-          <div class="nav-close">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
+        </div>
+        <div class="home-images ">
+          <div class="home-triangle"></div>
+          <img src="./assets/home-img.png" alt="home image" class="home-img" />
         </div>
       </div>
-    </header>
+    </section>
 
-    <!--==================== MAIN ====================-->
+    <!--==================== FIN HOME IMANE ====================-->
 
-    <!--==================== DEBUT HOME IMANE ====================-->
-    <main>
-      <section class="home" id="home">
-        <div class="home-container">
-          <div class="home-data">
-            <h1 class="home-title">Coaching Commando avec</h1>
-            <h2 class="home-subtitle">Mickael Le Faux</h2>
-            <p class="home-description">
-              Mickael, coach ultra-motivé et plein de good vibes et kiff total!
-              Il t’aide à te dépasser sans prise de tête. Avec lui,
-              transpiration et motivation vont de pair !
-            </p>
-            <a href="./consultation.html" class="button-consultation main-btn">
-              <span>Consultation</span> <span>OFFERTE</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="home-images ">
-            <div class="home-triangle"></div>
-            <img
-              src="./assets/home-img.png"
-              alt="home image"
-              class="home-img"
-            />
-          </div>
-        </div>
-      </section>
+    <!--==================== CYNTHIA: DEBUT ====================-->
 
-      <!--==================== FIN HOME IMANE ====================-->
+    <section id="bienvenueChezMicka" class="bienvenueChezMicka">
 
-        <!--==================== CYNTHIA: DEBUT ====================-->
+      <article id="illustration">
+        <img src="polygonSection2.png" alt="photo1" class="photo1">
+        <img src="assets/choose-img.png" alt="photo2" class="photo2">
 
-        <section id="bienvenueChezMicka" class="bienvenueChezMicka">
+      </article>
 
-            <article id="illustration">
-                <img src="polygonSection2.png" alt="photo1" class="photo1">
-                <img src="assets/choose-img.png" alt="photo2" class="photo2">
+      <article id="descriptionbio" class="descriptionbio">
+        <h2 id="Bienvenue">Bienvenue Chez <span class="firstname">MICKA</span></h2>
 
-            </article>
+        <h3 id="commando">Le Coaching Commando</h3>
 
-            <article id="descriptionbio" class="descriptionbio">
-                <h2 id="Bienvenue">Bienvenue Chez <span class="firstname">MICKA</span></h2>
+        <p id="bio">Ancien militaire, j’ai gardé la discipline, l’endurance et le goût du défi. Mon objectif ? Vous
+          aider
+          à
+          repousser vos limites, sans excuses, mais toujours avec bonne humeur. Avec moi, chaque séance est un
+          challenge : on bouge, on progresse et on se dépasse ! 💪🔥</p>
 
-                <h3 id="commando">Le Coaching Commando</h3>
+        <button class="a-propos">A propos</button>
 
-                <p id="bio">Ancien militaire, j’ai gardé la discipline, l’endurance et le goût du défi. Mon objectif ? Vous aider
-                    à
-                    repousser vos limites, sans excuses, mais toujours avec bonne humeur. Avec moi, chaque séance est un
-                    challenge : on bouge, on progresse et on se dépasse ! 💪🔥</p>
+      </article>
 
-                <button class="a-propos">A propos</button>
+    </section>
 
-            </article>
-
-        </section>
-
-        <!--==================== CYNTHIA: FIN ====================-->
+    <!--==================== CYNTHIA: FIN ====================-->
 
 
-        <!--==================== Valentin Début ====================-->
- <!--==================== Valentin Début ====================-->
- <section class="abonnement" id="abonnement">
-  <h2 class="main-section-title main-section-title title-avis">Mes formules !</h2>
-  <div id="container">
-      <div class="program"> <!--subscription? plan?-->
+    <!--==================== Valentin Début ====================-->
+    <!--==================== Valentin Début ====================-->
+    <section class="abonnement" id="abonnement">
+      <h2 class="main-section-title main-section-title title-avis">Mes formules !</h2>
+      <div id="container">
+        <div class="program"> <!--subscription? plan?-->
           <div class="program-header">
-              <img src="assets/pricing1.png" alt="Basique">
-              <h3>Basique</h3>
-              <p class="prix">30€</p>
+            <img src="assets/pricing1.png" alt="Basique">
+            <h3>Basique</h3>
+            <p class="prix">30€</p>
           </div>
           <ul class=" checklist">
-              <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
-              <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(2 jours/semaine)</li>
-              <li class="invalid"><i class="fa-solid fa-circle-xmark"></i>Accès aux cours collectifs</li>
-              <li class="invalid"><i class="fa-solid fa-circle-xmark"></i> Programme nutrition</li>
+            <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
+            <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(2 jours/semaine)</li>
+            <li class="invalid"><i class="fa-solid fa-circle-xmark"></i>Accès aux cours collectifs</li>
+            <li class="invalid"><i class="fa-solid fa-circle-xmark"></i> Programme nutrition</li>
           </ul>
           <button class="btn">Réserver →</button>
-      </div>
+        </div>
 
-      <div class="program-vert">
+        <div class="program-vert">
           <div class="program-header">
-              <img src="assets/pricing2.png" alt="Silver">
-              <h3 id="silver">Silver</h3>
-              <p class="prix">50€</p>
+            <img src="assets/pricing2.png" alt="Silver">
+            <h3 id="silver">Silver</h3>
+            <p class="prix">50€</p>
           </div>
           <ul class="checklist">
-              <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Accès à la salle de sport</li>
-              <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Coaching personnalisé <br>(3 jours/semaine)</li>
-              <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e"></i>Accès aux cours collectifs</li>
-              <li class="invalid"><i class="fa-solid fa-circle-xmark"></i> Programme nutrition</li>
+            <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Accès à la salle de sport
+            </li>
+            <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e;"></i>Coaching personnalisé
+              <br>(3 jours/semaine)
+            </li>
+            <li class="valid"><i class="fa-solid fa-circle-check" style="color: #1c231e"></i>Accès aux cours collectifs
+            </li>
+            <li class="invalid"><i class="fa-solid fa-circle-xmark"></i> Programme nutrition</li>
           </ul>
           <button id="btnV">Réserver →</button>
-      </div>
+        </div>
 
-      <div class="program">
+        <div class="program">
           <div class="program-header">
-              <img src="assets/pricing3.png" alt="Premium">
-              <h3>Premium</h3>
-              <p class="prix">100€</p>
+            <img src="assets/pricing3.png" alt="Premium">
+            <h3>Premium</h3>
+            <p class="prix">100€</p>
           </div>
           <ul class="checklist">
-              <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
-              <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(5 jours/semaine)</li>
-              <li class="valid"><i class="fa-solid fa-circle-check"></i>Accès aux cours collectifs</li>
-              <li class="valid"><i class="fa-solid fa-circle-check"></i>Programme nutrition</li>
+            <li class="valid"><i class="fa-solid fa-circle-check"></i> Accès à la salle de sport</li>
+            <li class="valid"><i class="fa-solid fa-circle-check"></i>Coaching personnalisé <br>(5 jours/semaine)</li>
+            <li class="valid"><i class="fa-solid fa-circle-check"></i>Accès aux cours collectifs</li>
+            <li class="valid"><i class="fa-solid fa-circle-check"></i>Programme nutrition</li>
           </ul>
           <button class="btn">Réserver →</button>
+        </div>
       </div>
+    </section>
+
+
+    <!--==================== Valentin Fin ====================-->
+
+
+    <!--==================== Valentin Fin ====================-->
+
+    <!--==================== CYNTHIA: DEBUT ====================-->
+    <section class="trainings" id="trainings">
+      <h2 class="main-section-title">Nos Programmes</h2>
+      <div id="program-listing">
+        <div id="musculation" class="tickets">
+          <div class="training-header">
+            <img src="assets/program4.png" alt="burden">
+            <h3>Power</h3>
+          </div>
+          <p class="explanation">Renforcement musculaire pour gagner en résistance et mobilité, tout en améliorant la
+            posture et limitant le risque de blessures.</p>
+        </div>
+        <div id="cardio-training" class="tickets">
+          <div class="training-header">
+            <img src="assets/program2.png" alt="clock">
+            <h3>Cardio</h3>
+          </div>
+          <p class="explanation">Exercices augmentant la fréquence cardiaque, en vue d'améliorer l'endurance et de
+            brûler des calories.</p>
+        </div>
+
+        <div id="crossfit" class="tickets">
+          <div class="training-header">
+            <img src="assets/program1.png" alt="training-weight">
+            <h3>Crossfit</h3>
+          </div>
+          <p class="explanation">Activité à haute intensité, à visée de performance associant gymnastique, haltérophilie
+            et endurance.</p>
+        </div>
+
+        <div id="HIT" class="tickets">
+          <div class="training-header">
+            <img src="assets/program3.png" alt="posture">
+            <h3>HIT</h3>
+          </div>
+          <p class="explanation">Entraînement de courte durée alternant des temps d'efforts intenses et des périodes de
+            récupération brêves.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== CYNTHIA: FIN ====================-->
+
+    <!--==================== DEBUT CHOISIR COACHING COMMANDO IMANE ====================-->
+    <section class="choose" id="choose">
+      <div class="section-data">
+        <h2 class="main-section-title choose-title">
+          Pourquoi le Coaching Commando
+        </h2>
+        <p class="choose-description">
+          Le coaching commando de Micka, inspiré des méthodes militaires, vous
+          aide à repousser vos limites physiques et mentales. Grâce à un
+          encadrement structuré, vous gagnez en force, endurance et
+          discipline. Avec Micka, vous développez une mentalité de gagnant
+          pour relever tous les défis.
+        </p>
+        <div class="choose-data">
+          <div class="choose-group">
+            <div class="stats-members">
+              <h3 class="choose-number">200+</h3>
+              <p class="choose-subtitle">Memberes</p>
+            </div>
+            <div class="stats-program">
+              <h3 class="choose-number">25+</h3>
+              <p class="choose-subtitle">Programmes</p>
+            </div>
+          </div>
+          <div class="choose-group">
+            <div class="stats-best-trainers">
+              <h3 class="choose-number">50+</h3>
+              <p class="choose-subtitle">Meilleurs entraineurs</p>
+            </div>
+            <div class="stats-awards">
+              <h3 class="choose-number">100+</h3>
+              <p class="choose-subtitle">Récompenses</p>
+            </div>
+          </div>
+        </div>
+        <div class="partner-container">
+          <div class="partner">
+            <img src="./assets/allianz.png" alt="" />
+            <img src="./assets/matmut.png" alt="" class="partner-img" />
+            <img src="./assets/asics.png" alt="" />
+            <img src="./assets/saucony.png" alt="" class="partner-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== FIN CHOISIR COACHING COMMANDO IMANE ====================-->
+
+    <!--==================== DEBUT AVIS IMANE ====================-->
+    <section class="testimonials" id="testimonials">
+      <h2 class="main-section-title title-avis">Avis de nos clients</h2>
+      <div class="carousel">
+        <button id="prevBtn" class="carousel-btn-avis">&#10094;</button>
+        <div class="carousel-container">
+          <div class="testimonial">
+            <div class="testimonial-header">
+              <h4 class="testimonial-name">Simon Guillo</h4>
+            </div>
+            <p class="testimonial-date">12 mars 2025</p>
+            <div class="testimonial-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              Mickael est un coach au top ! Toujours motivant, à l’écoute et
+              plein d’énergie,
+            </p>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-header">
+              <h4 class="testimonial-name">Mickael Lambert</h4>
+            </div>
+            <p class="testimonial-date">15 mars 2025</p>
+            <div class="testimonial-star">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">A fuir, IL EST NUL</p>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-header">
+              <h4 class="testimonial-name">Cynthia Morelle</h4>
+            </div>
+            <p class="testimonial-date">18 mars 2025</p>
+            <div class="testimonial-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              Coach attentif, rigoureux, idéal se level-Up sans se blesser.
+            </p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-header">
+              <h4 class="testimonial-name">Imane Bichon</h4>
+            </div>
+            <p class="testimonial-date">20 mars 2025</p>
+            <div class="testimonial-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              Une personne extrémement gentille, je le recommande à 100%.
+            </p>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-header">
+              <h4 class="testimonial-name">Valentin Ferreira</h4>
+            </div>
+            <p class="testimonial-date">22 mars 2025</p>
+            <div class="testimonial-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              Mickael, c'est la définition du coach parfait ! <3 </p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-header">
+              <h4 class="testimonial-name">Thomas Marghem</h4>
+            </div>
+            <p class="testimonial-date">22 mars 2025</p>
+            <div class="testimonial-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              Il sait motiver, adapter les entraînements
+            </p>
+          </div>
+        </div>
+        <button id="nextBtn" class="carousel-btn-avis">&#10095;</button>
+      </div>
+      <div class="evalutaion-google">
+        <p>Evaluation Google : 5 / 5, basée sur 6 avis</p>
+      </div>
+    </section>
+    <!--==================== FIN AVIS IMANE ====================-->
+  </main>
+
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/scroll.js"></script>
+</body>
+
+<footer>
+  <img src="assets/Logo Projet1.png" alt="Mika Fitness" class="logo">
+  <p class="subtitle">Coaching Commando</p>
+  <h2>Rejoignez-nous</h2>
+  <div class="separator"></div>
+  <div class="social-icons">
+    <a href="#"><img src="assets/facebook-logo-facebook-icon-transparent-free-png.webp" alt="Facebook"></a>
+    <a href="#"><img src="assets/instagram-logo-instagram-icon-transparent-free-png.webp" alt="Instagram"></a>
+    <a href="#"><img src="assets/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn"></a>
+    <a href="#"><img
+        src="assets/sankt-petersburg-russia-24-08-2023-twitter-new-logo-twitter-icons-twitter-x-logo-free-png - Copy.webp"
+        alt="Twitter"></a>
   </div>
-</section>
+  <p class="copyright">© 2025 Wilders</p>
+</footer>
 
 
+<<<<<<< HEAD
 <!--==================== Valentin Fin ====================-->
 
         
@@ -392,3 +619,6 @@
     <script src="./js/scroll.js"></script>
   </body>
 </html>
+=======
+</html>
+>>>>>>> 7853214cf2ba7279fe2e6a46eb8a910b4f9aa3ac
