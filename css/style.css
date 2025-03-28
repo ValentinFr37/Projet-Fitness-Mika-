@@ -24,9 +24,9 @@ body {
 }
 
 main {
-  max-width: 1200px;
-  margin: auto;
-  width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	width: 100%;
 }
 
 a {
@@ -41,28 +41,28 @@ a {
 }
 
 header {
-  display: flex;
-  position: fixed;
-  inset: 0;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  background: linear-gradient(180deg,
-      #1c231e 0%,
-      #0d1715 70%,
-      rgba(179, 213, 55, 0.1) 100%);
-  height: 80px;
-  z-index: 10;
-  width: 100%;
+	display: flex;
+	position: fixed;
+	inset: 0;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	background: linear-gradient(180deg,
+			#1c231e 0%,
+			#0d1715 70%,
+			rgba(179, 213, 55, 0.1) 100%);
+	height: 80px;
+	z-index: 10;
+	width: 100%;
 }
 
 .header-navbar {
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
 }
 
 
@@ -142,26 +142,26 @@ nav a:hover {
 
 /*=============== HOME IMANE ===============*/
 section.home {
-  margin-top: 100px;
-  width: 100%;
+	margin-top: 100px;
+	width: 100%;
 
 
 }
 
 .home-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 100px;
 }
 
 .home-data {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 100px;
 }
 
 .home-title {
@@ -183,11 +183,11 @@ section.home {
 }
 
 .home-description {
-  font-family: var(--paragraphe-font);
-  color: #afafaf;
-  max-width: 500px;
-  line-height: 2.5;
-  margin-bottom: 30px;
+	font-family: var(--paragraphe-font);
+	color: #afafaf;
+	max-width: 500px;
+	line-height: 2.5;
+	margin-bottom: 30px;
 }
 
 .home-images {
@@ -252,7 +252,7 @@ section.home {
 	height: 100vh;
 	display: flex;
 	justify-content: space-between;
-	
+
 }
 
 /*premier article à gauche : photo de Micka*/
@@ -290,6 +290,7 @@ section.home {
 	font-family: var(--h2-font);
 	font-size: 2.5rem;
 }
+
 .firstname {
 	color: var(--green-color);
 	font-weight: bold;
@@ -322,6 +323,7 @@ section.home {
 	border: 2px solid #b3d537;
 	cursor: pointer;
 }
+
 .a-propos:hover {
 	color: white;
 	background-color: #1d2c1f;
@@ -469,7 +471,7 @@ section.home {
 }
 
 .fa-circle-xmark {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 
@@ -488,12 +490,14 @@ section.home {
 	height: 100vh;
 	justify-content: space-between;
 }
+
 .trainings h3 {
 	font-family: var(--h2-font);
 	margin-top: 15px;
 	font-size: 28px;
 	color: var(--green-color);
 }
+
 #program-listing {
 	display: flex;
 	flex-wrap: wrap;
@@ -502,6 +506,7 @@ section.home {
 	max-width: 1200px;
 	margin: auto;
 }
+
 .tickets {
 	background-color: var(--prog-color);
 	width: 17%;
@@ -526,6 +531,7 @@ section.home {
 	width: 50px;
 	margin-bottom: auto;
 }
+
 .trainings p {
 	padding: 10px;
 	font-size: 1rem;
@@ -541,107 +547,111 @@ section.home {
 
 /*==================== CHOOSE COACHING MICKA IMANE: DEBUT ====================*/
 .choose {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
 }
 
 .choose-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 35px;
 }
 
 .choose-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: var(--paragraphe-font);
-  color: #afafaf;
-  width: 50%;
-  margin: auto;
-  line-height: 2.5;
-  margin-bottom: 30px;
-  font-size: 1.1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: var(--paragraphe-font);
+	color: #afafaf;
+	width: 50%;
+	margin: auto;
+	line-height: 2.5;
+	margin-bottom: 30px;
+	font-size: 1.1rem;
 }
 
 .choose-data {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  width: 700px;
-  margin: auto;
-  margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	width: 700px;
+	margin: auto;
+	margin-bottom: 40px;
 }
 
 .choose-group {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .stats-members {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
 }
 
 .stats-best-trainers {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
 }
 
 .choose-number {
-  font-size: 3.5rem;
-  font-family: "Amita", cursive;
-  color: var(--green-color);
-  font-weight: 400;
-  margin-bottom: 6px;
+	font-size: 3.5rem;
+	font-family: "Amita", cursive;
+	color: var(--green-color);
+	font-weight: 400;
+	margin-bottom: 6px;
 }
 
 .choose-subtitle {
-  font-size: var(--paragraphe-font);
-  color: #fafafa;
-  font-size: 1rem;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 24px;
+	font-size: var(--paragraphe-font);
+	color: #fafafa;
+	font-size: 1rem;
+	width: 100%;
+	align-items: center;
+	margin-bottom: 24px;
 }
 
 
 .partner-container {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  max-width: 1300px; /* Limite à 1300px en desktop */
-  width: 100%;
-  margin: auto; /* Centre la div */
-  white-space: nowrap;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+	max-width: 1300px;
+	/* Limite à 1300px en desktop */
+	width: 100%;
+	margin: auto;
+	/* Centre la div */
+	white-space: nowrap;
 }
 
 .partner {
-  display: flex;
-  gap: 20px;
-  animation: scroll 10s linear infinite;
-  width: 300px;
+	display: flex;
+	gap: 20px;
+	animation: scroll 10s linear infinite;
+	width: 300px;
 }
 
 .partner img {
-  height: 50px; /* Ajuste selon tes besoins */
-  object-fit: contain;
+	height: 50px;
+	/* Ajuste selon tes besoins */
+	object-fit: contain;
 }
 
 /* Animation de défilement */
 @keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-50%);
+	}
 }
 
 /*==================== CHOOSE COACHING MICKA IMANE: DEBUT ====================*/
@@ -649,9 +659,9 @@ section.home {
 
 /*=============== DEBUT SECTION AVIS IMANE ===============*/
 .testimonials {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: var(--darkGreen-color);
+	text-align: center;
+	padding: 50px 20px;
+	background-color: var(--darkGreen-color);
 }
 
 /* Carrousel */
@@ -664,10 +674,10 @@ section.home {
 
 /* Conteneur des avis */
 .carousel-container {
-  display: flex;
-  gap: 20px;
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
+	display: flex;
+	gap: 20px;
+	width: 100%;
+	transition: transform 0.5s ease-in-out;
 }
 
 .carousel-track {
@@ -677,17 +687,17 @@ section.home {
 }
 
 .testimonial {
-  flex: 0 0 calc(33% - 20px);
-  background: var(--prog-color);
-  padding: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+	flex: 0 0 calc(33% - 20px);
+	background: var(--prog-color);
+	padding: 20px 0;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 
 /* En-tête de l'avis */
@@ -699,41 +709,41 @@ section.home {
 }
 
 .testimonial-name {
-  font-family: var(--paragraphe-font);
-  color: #ffffff;
-  font-size: 1rem;
-  margin-bottom: 20px;
+	font-family: var(--paragraphe-font);
+	color: #ffffff;
+	font-size: 1rem;
+	margin-bottom: 20px;
 }
 
 .testimonial::after {
-  content: "";
-  position: absolute;
-  display: flex;
-  width: 20px;
-  height: 20px;
-  top: 10px;
-  right: 10px;
-  background-image: url("./../assets/Google.png");
-  background-size: contain;
-  margin-left: 10px;
+	content: "";
+	position: absolute;
+	display: flex;
+	width: 20px;
+	height: 20px;
+	top: 10px;
+	right: 10px;
+	background-image: url("./../assets/Google.png");
+	background-size: contain;
+	margin-left: 10px;
 }
 
 /* Date */
 .testimonial-date {
-  font-size: 0.8rem;
-  color: gray;
-  font-family: var(--paragraphe-font);
-  width: 100%;
-  margin-bottom: 20px;
+	font-size: 0.8rem;
+	color: gray;
+	font-family: var(--paragraphe-font);
+	width: 100%;
+	margin-bottom: 20px;
 }
 
 /* Étoiles */
 .testimonial-star i {
-  color: transparent;
-  background: linear-gradient(60deg, #f39c12, #f1c40f, #ffffff, #ffffff);
-  background-clip: text;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+	color: transparent;
+	background: linear-gradient(60deg, #f39c12, #f1c40f, #ffffff, #ffffff);
+	background-clip: text;
+	font-size: 1.2rem;
+	margin-bottom: 20px;
 }
 
 /* Texte de l'avis */
@@ -751,14 +761,14 @@ section.home {
 
 /* Boutons de navigation */
 .carousel-btn-avis {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 10px;
-  color: #fafafa;
-  transition: 0.3s;
-  z-index: 1;
+	background: none;
+	border: none;
+	font-size: 2rem;
+	cursor: pointer;
+	padding: 10px;
+	color: #fafafa;
+	transition: 0.3s;
+	z-index: 1;
 }
 
 .carousel-btn-avis:hover {
@@ -766,11 +776,11 @@ section.home {
 }
 
 .evalutaion-google p {
-  color: var(--green-color);
-  font-size: 1.8rem;
-  margin: auto;
-  margin-top: 30px;
-  font-family: var(--paragraphe-font);
+	color: var(--green-color);
+	font-size: 1.8rem;
+	margin: auto;
+	margin-top: 30px;
+	font-family: var(--paragraphe-font);
 }
 
 /*=============== FIN SECTION AVIS IMANE ===============*/
@@ -795,11 +805,11 @@ section.home {
 }
 
 .section-title-border {
-  font-family: "Londrina Outline", sans-serif;
-  color: white;
-  font-size: 3rem;
-  letter-spacing: 0.4rem;
-  margin-bottom: 40px;
+	font-family: "Londrina Outline", sans-serif;
+	color: white;
+	font-size: 3rem;
+	letter-spacing: 0.4rem;
+	margin-bottom: 40px;
 }
 
 .section-title-border span {
@@ -809,12 +819,12 @@ section.home {
 }
 
 .calculate-description {
-  font-family: var(--paragraphe-font);
-  color: #afafaf;
-  max-width: 500px;
-  line-height: 1.7;
-  margin-bottom: 50px;
-  text-align: center;
+	font-family: var(--paragraphe-font);
+	color: #afafaf;
+	max-width: 500px;
+	line-height: 1.7;
+	margin-bottom: 50px;
+	text-align: center;
 }
 
 .imc-form {
@@ -844,7 +854,7 @@ section.home {
 }
 
 .calcule-imc-btn {
-  border-radius: 5px;
+	border-radius: 5px;
 }
 
 form .main-btn {
@@ -864,9 +874,11 @@ form .main-btn {
 .formulaire {
 	display: flex;
 }
+
 .partie-1 {
 	width: 40vw;
 }
+
 .partie-1 img {
 	width: 300px;
 	justify-self: center;
@@ -905,10 +917,12 @@ form .main-btn {
 	color: white;
 	font-size: 16px;
 }
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
 	color: gray;
 }
+
 .contact-form button {
 	background-color: #b1dc39;
 	color: black;
@@ -920,11 +934,13 @@ form .main-btn {
 	cursor: pointer;
 	transition: 0.3s;
 }
+
 .contact-form button:hover {
 	color: white;
 	background-color: #1d2c1f;
 	box-shadow: 0 0 10px #afafaf;
 }
+
 .partie-2 p {
 	font-family: var(--paragraphe-font);
 	color: var(--paragraphe-color);
@@ -933,8 +949,8 @@ form .main-btn {
 	width: 70%;
 }
 
-.formulaire a{
-  color: var(--green-color);
+.formulaire a {
+	color: var(--green-color);
 }
 
 /* ===============FIN FORMULAIRE VALENTIN ============*/
@@ -942,45 +958,121 @@ form .main-btn {
 /* scrollup IMANE */
 
 .scrollup {
-  position: fixed;
-  right: 1rem;
-  bottom: -30%;
-  background-color: #b3d537;
-  display: inline-flex;
-  padding: .35rem;
-  color: black;
-  font-size: 1.25rem;
-  z-index: 20;
-  transition: .3S;
+	position: fixed;
+	right: 1rem;
+	bottom: -30%;
+	background-color: #b3d537;
+	display: inline-flex;
+	padding: .35rem;
+	color: black;
+	font-size: 1.25rem;
+	z-index: 20;
+	transition: .3S;
 }
 
 .scrollup:hover {
-  transform: translateY(-.25rem);
+	transform: translateY(-.25rem);
 }
 
 .show-scroll {
-  bottom: 3rem;
+	bottom: 3rem;
 }
+
 .hidden {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .visible {
-    opacity: 1;
-    transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .hidden-up {
-  opacity: 0;
-  transform: translateY(-30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+	opacity: 0;
+	transform: translateY(-30px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .hidden-down {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
+footer .logo {
+	display: block;
+	margin: 0 auto 10px;
+	width: 130px;
+
+}
+
+footer h2 {
+	display: flex;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 0;
+	justify-content: center;
+	color: white;
+}
+
+footer p {
+	display: flex;
+	font-size: 14px;
+	margin: 5px 0;
+	justify-content: center;
+	color: white;
+}
+
+footer .separator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0;
+}
+
+footer .separator::before,
+footer .separator::after {
+	content: "";
+	flex: 1;
+	height: 2px;
+	background-color: #b3d537;
+	margin: 0 70px;
+}
+
+footer .social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin: 15px 0;
+}
+
+footer .social-icons a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-decoration: none;
+}
+
+footer .social-icons a img {
+	width: 50px;
+	height: 50px;
+}
+
+footer .copyright {
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.6);
+	margin-top: 10px;
+
+}
+
+.copyright {
+	text-align: center;
+	font-size: 12px;
+	color: white;
+	margin-top: 10px;
+}
